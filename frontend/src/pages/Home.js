@@ -1,9 +1,29 @@
 
 import images from '../utils/importImages'
 import mainLogo from '../assets/images/logo.svg';
+import React, { useEffect, useRef } from 'react';
+
+
 
 
 const Home = () => {
+
+  const myElementRef = useRef(null);
+
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = `${process.env.PUBLIC_URL}/js/script.js`;
+    script.async = true;
+    document.body.appendChild(script);
+
+    script.onload = () => {
+      // Your script runs automatically, no need to call any function here
+    };
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
     return (  
         <div class="body-wrap">
@@ -30,7 +50,7 @@ const Home = () => {
 	                        <p class="hero-paragraph">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
 	                        <div class="hero-cta"><a class="button button-primary" href="#">Pre order now</a><a class="button" href="#">Get in touch</a></div>
 						</div>
-						<div class="hero-figure anime-element">
+						<div class="hero-figure anime-element" ref={myElementRef}>
 							<svg class="placeholder" width="528" height="396" viewBox="0 0 528 396">
 								<rect width="528" height="396" style={{fill:"transparent"}} />
 							</svg>
