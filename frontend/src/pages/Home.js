@@ -50,14 +50,9 @@ const Home = () => {
                                 <div class="hero-cta">
                                     <a class="button button-primary" href="#">Buy it now</a>
                                     <div class="lights-toggle">
-                                        <input id="lights-toggle" type="checkbox" name="lights-toggle" class="switch" checked="checked"/>
+                                        <input id="lights-toggle" type="checkbox" name="lights-toggle" class="switch" defaultChecked />
                                         <label for="lights-toggle" class="text-xs">
-                                            <span>
-                                                Turn me 
-                                                <span class="label-text">
-                                                    dark
-                                                </span>
-                                                </span>
+                                            <span>Turn me <span class="label-text">dark</span></span>
                                         </label>
                                     </div>
                                 </div>
