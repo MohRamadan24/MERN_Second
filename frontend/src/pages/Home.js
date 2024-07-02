@@ -1,6 +1,4 @@
-
 import images from '../utils/importImages'
-import mainLogo from '../assets/images/logo.svg';
 import React, { useEffect, useRef } from 'react';
 
 
@@ -33,8 +31,8 @@ const Home = () => {
                         <div class="brand header-brand">
                             <h1 class="m-0">
                                 <a href="#">
-                                    <img class="header-logo-image asset-light" src="dist/images/logo-light.svg" alt="Logo"/>
-                                    <img class="header-logo-image asset-dark" src="dist/images/logo-dark.svg" alt="Logo"/>
+                                    <img class="header-logo-image asset-light" src={images['logo-light.svg']} alt="Logo"/>
+                                    <img class="header-logo-image asset-dark" src={images['logo-dark.svg']} alt="Logo"/>
                                 </a>
                             </h1>
                         </div>
@@ -53,22 +51,29 @@ const Home = () => {
                                     <a class="button button-primary" href="#">Buy it now</a>
                                     <div class="lights-toggle">
                                         <input id="lights-toggle" type="checkbox" name="lights-toggle" class="switch" checked="checked"/>
-                                        <label for="lights-toggle" class="text-xs"><span>Turn me <span class="label-text">dark</span></span></label>
+                                        <label for="lights-toggle" class="text-xs">
+                                            <span>
+                                                Turn me 
+                                                <span class="label-text">
+                                                    dark
+                                                </span>
+                                                </span>
+                                        </label>
                                     </div>
                                 </div>
                             </div>
                             <div class="hero-media">
                                 <div class="header-illustration">
-                                    <img class="header-illustration-image asset-light" src="dist/images/header-illustration-light.svg" alt="Header illustration"/>
-                                    <img class="header-illustration-image asset-dark" src="dist/images/header-illustration-dark.svg" alt="Header illustration"/>
+                                    <img class="header-illustration-image asset-light" src={images['header-illustration-light.svg']} alt="Header illustration"/>
+                                    <img class="header-illustration-image asset-dark" src={images['header-illustration-dark.svg']} alt="Header illustration"/>
                                 </div>
                                 <div class="hero-media-illustration">
-                                    <img class="hero-media-illustration-image asset-light" src="dist/images/hero-media-illustration-light.svg" alt="Hero media illustration"/>
-                                    <img class="hero-media-illustration-image asset-dark" src="dist/images/hero-media-illustration-dark.svg" alt="Hero media illustration"/>
+                                    <img class="hero-media-illustration-image asset-light" src={images['hero-media-illustration-light.svg']} alt="Hero media illustration"/>
+                                    <img class="hero-media-illustration-image asset-dark" src={images['hero-media-illustration-dark.svg']} alt="Hero media illustration"/>
                                 </div>
                                 <div class="hero-media-container">
-                                    <img class="hero-media-image asset-light" src="dist/images/hero-media-light.svg" alt="Hero media"/>
-                                    <img class="hero-media-image asset-dark" src="dist/images/hero-media-dark.svg" alt="Hero media"/>
+                                    <img class="hero-media-image asset-light" src={images['hero-media-light.svg']} alt="Hero media"/>
+                                    <img class="hero-media-image asset-dark" src={images['hero-media-dark.svg']} alt="Hero media"/>
                                 </div>
                             </div>
                         </div>
@@ -83,12 +88,12 @@ const Home = () => {
                                     <h2 class="section-title mt-0">The Product</h2>
                                     <p class="section-paragraph">Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation.</p>
                                     <div class="features-image">
-                                        <img class="features-illustration asset-dark" src="dist/images/features-illustration-dark.svg" alt="Feature illustration"/>
-                                        <img class="features-box asset-dark" src="dist/images/features-box-dark.svg" alt="Feature box"/>
-                                        <img class="features-illustration asset-dark" src="dist/images/features-illustration-top-dark.svg" alt="Feature illustration top"/>
-                                        <img class="features-illustration asset-light" src="dist/images/features-illustration-light.svg" alt="Feature illustration"/>
-                                        <img class="features-box asset-light" src="dist/images/features-box-light.svg" alt="Feature box"/>
-                                        <img class="features-illustration asset-light" src="dist/images/features-illustration-top-light.svg" alt="Feature illustration top"/>
+                                        <img class="features-illustration asset-dark" src={images['features-illustration-dark.svg']} alt="Feature illustration"/>
+                                        <img class="features-box asset-dark" src={images['features-box-dark.svg']} alt="Feature box"/>
+                                        <img class="features-illustration asset-dark" src={images['features-illustration-top-dark.svg']} alt="Feature illustration top"/>
+                                        <img class="features-illustration asset-light" src={images['features-illustration-light.svg']} alt="Feature illustration"/>
+                                        <img class="features-box asset-light" src={images['features-box-light.svg']} alt="Feature box"/>
+                                        <img class="features-illustration asset-light" src={images['features-illustration-top-light.svg']} alt="Feature illustration top"/>
                                     </div>
                                 </div>
                             </div>
@@ -96,8 +101,8 @@ const Home = () => {
                                 <div class="feature is-revealing">
                                     <div class="feature-inner">
                                         <div class="feature-icon">
-                                            <img class="asset-light" src="dist/images/feature-01-light.svg" alt="Feature 01"/>
-                                            <img class="asset-dark" src="dist/images/feature-01-dark.svg" alt="Feature 01"/>
+                                            <img class="asset-light" src={images['feature-01-light.svg']} alt="Feature 01"/>
+                                            <img class="asset-dark" src={images['feature-01-dark.svg']} alt="Feature 01"/>
                                         </div>
                                         <div class="feature-content">
                                             <h3 class="feature-title mt-0">Discover</h3>
@@ -108,8 +113,8 @@ const Home = () => {
                                 <div class="feature is-revealing">
                                     <div class="feature-inner">
                                         <div class="feature-icon">
-                                            <img class="asset-light" src="dist/images/feature-02-light.svg" alt="Feature 02"/>
-                                            <img class="asset-dark" src="dist/images/feature-02-dark.svg" alt="Feature 02"/>
+                                            <img class="asset-light" src={images['feature-02-light.svg']} alt="Feature 02"/>
+                                            <img class="asset-dark" src={images['feature-02-dark.svg']} alt="Feature 02"/>
                                         </div>
                                         <div class="feature-content">
                                             <h3 class="feature-title mt-0">Discover</h3>
@@ -120,8 +125,8 @@ const Home = () => {
                                 <div class="feature is-revealing">
                                     <div class="feature-inner">
                                         <div class="feature-icon">
-                                            <img class="asset-light" src="dist/images/feature-03-light.svg" alt="Feature 03"/>
-                                            <img class="asset-dark" src="dist/images/feature-03-dark.svg" alt="Feature 03"/>
+                                            <img class="asset-light" src={images['feature-03-light.svg']} alt="Feature 03"/>
+                                            <img class="asset-dark" src={images['feature-03-dark.svg']} alt="Feature 03"/>
                                         </div>
                                         <div class="feature-content">
                                             <h3 class="feature-title mt-0">Discover</h3>
@@ -154,8 +159,8 @@ const Home = () => {
                     <div class="site-footer-inner">
                         <div class="brand footer-brand">
                             <a href="#">
-                                <img class="asset-light" src="dist/images/logo-light.svg" alt="Logo"/>
-                                <img class="asset-dark" src="dist/images/logo-dark.svg" alt="Logo"/>
+                                <img class="asset-light" src={images['logo-light.svg']} alt="Logo"/>
+                                <img class="asset-dark" src={images['logo-dark.svg']} alt="Logo"/>
                             </a>
                         </div>
                         <ul class="footer-links list-reset">
