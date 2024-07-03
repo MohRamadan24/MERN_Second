@@ -37,16 +37,18 @@
         const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
   
         if (isMac) {
-          if ((event.metaKey && event.altKey && event.key === 'I') || // Command + Option + I
-              (event.metaKey && event.altKey && event.key === 'J') || // Command + Option + J
-              (event.metaKey && event.altKey && event.key === 'C')) { // Command + Option + C
+          if ((event.metaKey && event.altKey && event.key.toLowerCase() === 'i') || // Command + Option + I
+              (event.metaKey && event.altKey && event.key.toLowerCase() === 'j') || // Command + Option + J
+              (event.metaKey && event.altKey && event.key.toLowerCase() === 'c')) { // Command + Option + C
+            console.log(`Prevented ${event.key}`);
             event.preventDefault();
           }
         } else {
           if (event.key === 'F12' || 
-              (event.ctrlKey && event.shiftKey && event.key === 'I') || // Ctrl + Shift + I
-              (event.ctrlKey && event.shiftKey && event.key === 'J') || // Ctrl + Shift + J
-              (event.ctrlKey && event.shiftKey && event.key === 'C')) { // Ctrl + Shift + C
+              (event.ctrlKey && event.shiftKey && event.key.toLowerCase() === 'i') || // Ctrl + Shift + I
+              (event.ctrlKey && event.shiftKey && event.key.toLowerCase() === 'j') || // Ctrl + Shift + J
+              (event.ctrlKey && event.shiftKey && event.key.toLowerCase() === 'c')) { // Ctrl + Shift + C
+            console.log(`Prevented ${event.key}`);
             event.preventDefault();
           }
         }
