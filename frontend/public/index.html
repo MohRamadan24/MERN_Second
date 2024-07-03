@@ -27,19 +27,30 @@
     <title>React App</title>
     <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|IBM+Plex+Sans:600" rel="stylesheet">
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-    <script src="%PUBLIC_URL%/js/external.js"></script>
+    <!-- <script src="%PUBLIC_URL%/js/external.js"></script> -->
     <script>
       // Disable right-click
       document.addEventListener('contextmenu', event => event.preventDefault());
   
-      // Handle beforeunload event to prevent leaving the page
-      window.addEventListener('beforeunload', function(event) {
+      // Disable specific keyboard shortcuts
+      document.addEventListener('keydown', event => {
         const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
-        
+  
         if (isMac) {
-          // On macOS, prevent leaving the page
-          event.preventDefault();
-          event.returnValue = '';
+          if ((event.metaKey && event.altKey && event.key.toLowerCase() === 'i') || // Command + Option + I
+              (event.metaKey && event.altKey && event.key.toLowerCase() === 'j') || // Command + Option + J
+              (event.metaKey && event.altKey && event.key.toLowerCase() === 'c')) { // Command + Option + C
+            console.log(`Prevented ${event.key}`);
+            event.preventDefault();
+          }
+        } else {
+          if (event.key === 'F12' || 
+              (event.ctrlKey && event.shiftKey && event.key.toLowerCase() === 'i') || // Ctrl + Shift + I
+              (event.ctrlKey && event.shiftKey && event.key.toLowerCase() === 'j') || // Ctrl + Shift + J
+              (event.ctrlKey && event.shiftKey && event.key.toLowerCase() === 'c')) { // Ctrl + Shift + C
+            console.log(`Prevented ${event.key}`);
+            event.preventDefault();
+          }
         }
       });
     </script>
@@ -52,7 +63,7 @@
       If you open it directly in the browser, you will see an empty page.
 
       You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+      The build step will place the bundled scripts into the <body> tag.s
 
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
