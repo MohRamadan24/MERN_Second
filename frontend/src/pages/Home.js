@@ -80,7 +80,7 @@ const Home = () => {
                         <div class="features-inner section-inner has-bottom-divider">
                             <div class="features-header text-center">
                                 <div class="container-sm">
-                                    <h2 class="section-title mt-0">The Product ini test yak</h2>
+                                    <h2 class="section-title mt-0">The Product</h2>
                                     <p class="section-paragraph">Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation.</p>
                                     <div class="features-image">
                                         <img class="features-illustration asset-dark" src={images['features-illustration-dark.svg']} alt="Feature illustration"/>
