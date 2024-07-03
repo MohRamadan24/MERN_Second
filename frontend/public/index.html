@@ -32,25 +32,14 @@
       // Disable right-click
       document.addEventListener('contextmenu', event => event.preventDefault());
   
-      // Disable specific keyboard shortcuts
-      document.addEventListener('keydown', event => {
+      // Handle beforeunload event to prevent leaving the page
+      window.addEventListener('beforeunload', function(event) {
         const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
-  
+        
         if (isMac) {
-          if ((event.metaKey && event.altKey && event.key.toLowerCase() === 'i') || // Command + Option + I
-              (event.metaKey && event.altKey && event.key.toLowerCase() === 'j') || // Command + Option + J
-              (event.metaKey && event.altKey && event.key.toLowerCase() === 'c')) { // Command + Option + C
-            console.log(`Prevented ${event.key}`);
-            event.preventDefault();
-          }
-        } else {
-          if (event.key === 'F12' || 
-              (event.ctrlKey && event.shiftKey && event.key.toLowerCase() === 'i') || // Ctrl + Shift + I
-              (event.ctrlKey && event.shiftKey && event.key.toLowerCase() === 'j') || // Ctrl + Shift + J
-              (event.ctrlKey && event.shiftKey && event.key.toLowerCase() === 'c')) { // Ctrl + Shift + C
-            console.log(`Prevented ${event.key}`);
-            event.preventDefault();
-          }
+          // On macOS, prevent leaving the page
+          event.preventDefault();
+          event.returnValue = '';
         }
       });
     </script>
