@@ -41,7 +41,7 @@
       });
   
       anime.timeline({
-        targets: '.hero-figure-box-06, .hero-figure-box-07'
+        targets: '.hero-figure-box-07'
       }).add({
         duration: 400,
         easing: 'easeInOutExpo',

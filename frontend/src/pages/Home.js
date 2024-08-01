@@ -1,6 +1,6 @@
 
 import images from '../utils/importImages'
-import mainLogo from '../assets/images/logo.svg';
+// import mainLogo from '../assets/images/logo.svg';
 import React, { useEffect, useRef } from 'react';
 
 
@@ -59,7 +59,8 @@ const Home = () => {
 							<div class="hero-figure-box hero-figure-box-03" data-rotation="0deg"></div>
 							<div class="hero-figure-box hero-figure-box-04" data-rotation="-135deg"></div>
 							<div class="hero-figure-box hero-figure-box-05"></div>
-							<div class="hero-figure-box hero-figure-box-06"></div>
+							<div class="hero-figure-box hero-figure-box-06">
+                            </div>
 							<div class="hero-figure-box hero-figure-box-07"></div>
 							<div class="hero-figure-box hero-figure-box-08" data-rotation="-22deg"></div>
 							<div class="hero-figure-box hero-figure-box-09" data-rotation="-52deg"></div>

@@ -336,7 +336,7 @@ h1,.h1 {
   letter-spacing: 0px
 }
 
-@media (min-width: 641px) {
+@media (min-width: 1100px) {
   h1,.h1 {
       font-size:44px;
       line-height: 54px;
@@ -350,7 +350,7 @@ h2,.h2 {
   letter-spacing: 0px
 }
 
-@media (min-width: 641px) {
+@media (min-width: 1100px) {
   h2,.h2 {
       font-size:38px;
       line-height: 48px;
@@ -364,7 +364,7 @@ h3,.h3,blockquote {
   letter-spacing: 0px
 }
 
-@media (min-width: 641px) {
+@media (min-width: 1100px) {
   h3,.h3,blockquote {
       font-size:32px;
       line-height: 42px;
@@ -378,7 +378,7 @@ h4,h5,h6,.h4,.h5,.h6 {
   letter-spacing: -0.1px
 }
 
-@media (min-width: 641px) {
+@media (min-width: 1100px) {
   h4,h5,h6,.h4,.h5,.h6 {
       font-size:24px;
       line-height: 34px;
@@ -386,7 +386,7 @@ h4,h5,h6,.h4,.h5,.h6 {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1100px) {
   .h1-mobile {
       font-size:38px;
       line-height: 48px;
@@ -1084,7 +1084,7 @@ button,input,select,textarea,label {
   margin-bottom: 8px
 }
 
-@media (min-width: 641px) {
+@media (min-width: 1100px) {
   .field-grouped {
       display:flex
   }
@@ -1142,12 +1142,12 @@ button,input,select,textarea,label {
 }
 
 .button-primary {
-  background: #097dea;
+  background: #4228E4;
   background: linear-gradient(65deg, #0270D7 0, #0F8AFD 100%)
 }
 
 .button-primary:hover {
-  background: #0982f4;
+  background: #4228E4;
   background: linear-gradient(65deg, #0275e1 0, #198ffd 100%)
 }
 
@@ -1160,7 +1160,7 @@ button,input,select,textarea,label {
   width: 100%
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1100px) {
   .button-wide-mobile {
       width:100%;
       max-width: 280px
@@ -1198,7 +1198,7 @@ button,input,select,textarea,label {
   padding: 8px 24px
 }
 
-@media (min-width: 641px) {
+@media (min-width: 1100px) {
   .site-header {
       position:relative
   }
@@ -1298,7 +1298,7 @@ button,input,select,textarea,label {
   top: 41.9%;
   width: 28.03%;
   height: 37.37%;
-  background: linear-gradient(to left top, #00BFFB, rgba(0,191,251,0));
+  background: linear-gradient(to left top, #563BFF, rgba(0,191,251,0));
   transform: rotateZ(45deg)
 }
 
@@ -1312,7 +1312,7 @@ button,input,select,textarea,label {
   top: 64.1%;
   width: 37.87%;
   height: 50.50%;
-  background: linear-gradient(to left top, #0270D7, rgba(2,112,215,0));
+  background: linear-gradient(to left top, #4228E4, rgba(2,112,215,0));
   transform: rotateZ(-45deg)
 }
 
@@ -1326,7 +1326,7 @@ button,input,select,textarea,label {
   top: -56.8%;
   width: 56.81%;
   height: 75.75%;
-  background: linear-gradient(to left top, #00BFFB, rgba(0,191,251,0))
+  background: linear-gradient(to left top, #563BFF, rgba(0,191,251,0))
 }
 
 .hero-figure-box-03::before {
@@ -1339,7 +1339,7 @@ button,input,select,textarea,label {
   top: -8%;
   width: 45.45%;
   height: 60.60%;
-  background: linear-gradient(to left top, #0270D7, rgba(2,112,215,0));
+  background: linear-gradient(to left top, #4228E4, rgba(2,112,215,0));
   transform: rotateZ(-135deg)
 }
 
@@ -1362,11 +1362,16 @@ button,input,select,textarea,label {
 }
 
 .hero-figure-box-06 {
-  left: 65.5%;
-  top: 6.3%;
-  width: 30.3%;
-  height: 40.4%;
-  transform: rotateZ(20deg)
+  left: 43.5%;
+  top: 8.3%;
+  width: 69%;
+  height: 92%;
+  z-index: 10;
+  border-radius: 50%;
+  background-image: url("assets/images/rama2.png");
+  background-position: center;
+  background-size: 390px 390px;
+  background-repeat: no-repeat;
 }
 
 .hero-figure-box-07 {
@@ -1382,7 +1387,7 @@ button,input,select,textarea,label {
   top: 81.6%;
   width: 19.51%;
   height: 26.01%;
-  background: #0270D7;
+  background: #4228E4;
   transform: rotateZ(-22deg)
 }
 
@@ -1396,7 +1401,7 @@ button,input,select,textarea,label {
   top: -17.9%;
   width: 6.63%;
   height: 8.83%;
-  background: #00BFFB;
+  background: #4228E4;
   transform: rotateZ(-52deg)
 }
 
@@ -1410,11 +1415,11 @@ button,input,select,textarea,label {
   top: 4.3%;
   width: 3.03%;
   height: 4.04%;
-  background: rgba(0,191,251,0.32);
+  background: rgba(66,40,228,0.32);
   transform: rotateZ(-50deg)
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1100px) {
   .hero-cta {
       max-width:280px;
       margin-left: auto;
@@ -1432,9 +1437,15 @@ button,input,select,textarea,label {
   .hero-figure::after,.hero-figure-box-03,.hero-figure-box-04,.hero-figure-box-09 {
       display: none
   }
+
+  .hero-inner {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center
+}
 }
 
-@media (min-width: 641px) {
+@media (min-width: 1100px) {
   .hero {
       text-align:left;
       padding-top: 64px;
@@ -1448,7 +1459,7 @@ button,input,select,textarea,label {
   }
 
   .hero-copy {
-      padding-right: 64px;
+      /* padding-right: 64px; */
       min-width: 552px;
       width: 552px
   }
@@ -1502,7 +1513,7 @@ button,input,select,textarea,label {
   justify-content: center
 }
 
-@media (min-width: 641px) {
+@media (min-width: 1100px) {
   .features-wrap:first-of-type {
       margin-top:-24px
   }
@@ -1616,7 +1627,7 @@ button,input,select,textarea,label {
   align-self: flex-end
 }
 
-@media (min-width: 641px) {
+@media (min-width: 1100px) {
   .pricing .section-paragraph {
       padding-left:90px;
       padding-right: 90px
@@ -1660,7 +1671,7 @@ button,input,select,textarea,label {
   position: relative
 }
 
-@media (min-width: 641px) {
+@media (min-width: 1100px) {
   .cta {
       text-align:left
   }
@@ -1711,7 +1722,7 @@ main {
   padding-bottom: 48px
 }
 
-@media (min-width: 641px) {
+@media (min-width: 1100px) {
   .section-inner {
       padding-top:88px;
       padding-bottom: 88px
@@ -1768,7 +1779,7 @@ main {
   margin-left: 24px
 }
 
-@media (min-width: 641px) {
+@media (min-width: 1100px) {
   .site-footer {
       margin-top:20px
   }
