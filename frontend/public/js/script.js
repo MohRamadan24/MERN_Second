@@ -57,6 +57,24 @@
         duration: 800,
         rotateZ: '20deg'
       });
+
+      anime.timeline({
+        targets: '.hero-figure-box-17'
+      }).add({
+        duration: 400,
+        easing: 'easeInOutExpo',
+        scaleX: [0.05, 0.05],
+        scaleY: [0, 1],
+        perspective: '500px',
+        delay: anime.random(0, 400)
+      }).add({
+        duration: 400,
+        easing: 'easeInOutExpo',
+        scaleX: 1
+      }).add({
+        duration: 800,
+        rotateZ: '45deg'
+      });
   
       anime({
         targets: '.hero-figure-box-01,.hero-figure-box-11, .hero-figure-box-02, .hero-figure-box-03, .hero-figure-box-04, .hero-figure-box-08, .hero-figure-box-09, .hero-figure-box-10',

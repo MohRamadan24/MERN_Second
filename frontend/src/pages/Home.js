@@ -33,7 +33,7 @@ const Home = () => {
                     <div class="brand header-brand">
                         <h1 class="m-0">
 							<a href="#">
-								<img class="header-logo-image" src={images['logo.svg']}lt="Logo"/>
+                            <img class="header-logo-image" src={images['logo_rama.svg']} alt="Logo" style={{height: "70px"}}/>
                             </a>
                         </h1>
                     </div>
@@ -46,16 +46,17 @@ const Home = () => {
                 <div class="container">
                     <div class="hero-inner">
 						<div class="hero-copy">
-	                        <h1 class="hero-title mt-0">Landing template for startups</h1>
-	                        <p class="hero-paragraph">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
-	                        <div class="hero-cta"><a class="button button-primary" href="#">Pre order now</a><a class="button" href="#">Get in touch</a></div>
+	                        <h1 class="hero-title mt-0 mb-0">MOH. RAMADAN</h1>
+                            <h4 class="mt-0 mb-32">Quality Assurance Analyst</h4>
+	                        <p class="hero-paragraph">I am a QA Analyst with over two years of experience in software quality. With strong verbal and written communication skills, i am capable of explaining complex software issues in easy-to-understand terms.</p>
+	                        <div class="hero-cta"><a class="button button-primary" href="#">Contact Me</a><a class="button" href="#">Portofolio</a></div>
 						</div>
 						<div class="hero-figure anime-element" ref={myElementRef}>
 							<svg class="placeholder" width="528" height="396" viewBox="0 0 528 396">
 								<rect width="528" height="396" style={{fill:"transparent"}} />
 							</svg>
 							<div class="hero-figure-box hero-figure-box-01" data-rotation="45deg"></div>
-                            <div class="hero-figure-box hero-figure-box-11" data-rotation="45deg"></div>
+                            {/* <div class="hero-figure-box hero-figure-box-11" data-rotation="45deg"></div> */}
 							<div class="hero-figure-box hero-figure-box-02" data-rotation="-45deg"></div>
 							<div class="hero-figure-box hero-figure-box-03" data-rotation="0deg"></div>
 							<div class="hero-figure-box hero-figure-box-04" data-rotation="-135deg"></div>
@@ -63,6 +64,7 @@ const Home = () => {
 							<div class="hero-figure-box hero-figure-box-06">
                             </div>
 							<div class="hero-figure-box hero-figure-box-07"></div>
+                            <div class="hero-figure-box hero-figure-box-17"></div>
 							<div class="hero-figure-box hero-figure-box-08" data-rotation="-22deg"></div>
 							<div class="hero-figure-box hero-figure-box-09" data-rotation="-52deg"></div>
 							<div class="hero-figure-box hero-figure-box-10" data-rotation="-50deg"></div>
