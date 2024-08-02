@@ -55,10 +55,11 @@ const Home = () => {
 								<rect width="528" height="396" style={{fill:"transparent"}} />
 							</svg>
 							<div class="hero-figure-box hero-figure-box-01" data-rotation="45deg"></div>
+                            <div class="hero-figure-box hero-figure-box-11" data-rotation="45deg"></div>
 							<div class="hero-figure-box hero-figure-box-02" data-rotation="-45deg"></div>
 							<div class="hero-figure-box hero-figure-box-03" data-rotation="0deg"></div>
 							<div class="hero-figure-box hero-figure-box-04" data-rotation="-135deg"></div>
-							<div class="hero-figure-box hero-figure-box-05"></div>
+							{/* <div class="hero-figure-box hero-figure-box-05"></div> */}
 							<div class="hero-figure-box hero-figure-box-06">
                             </div>
 							<div class="hero-figure-box hero-figure-box-07"></div>

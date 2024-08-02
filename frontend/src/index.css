@@ -1279,11 +1279,11 @@ button,input,select,textarea,label {
   will-change: transform
 }
 
-.hero-figure-box-01,.hero-figure-box-02,.hero-figure-box-03,.hero-figure-box-04,.hero-figure-box-08,.hero-figure-box-09 {
+.hero-figure-box-01,.hero-figure-box-11,.hero-figure-box-02,.hero-figure-box-03,.hero-figure-box-04,.hero-figure-box-08,.hero-figure-box-09 {
   overflow: hidden
 }
 
-.hero-figure-box-01::before,.hero-figure-box-02::before,.hero-figure-box-03::before,.hero-figure-box-04::before,.hero-figure-box-08::before,.hero-figure-box-09::before {
+.hero-figure-box-01::before,.hero-figure-box-11::before,.hero-figure-box-02::before,.hero-figure-box-03::before,.hero-figure-box-04::before,.hero-figure-box-08::before,.hero-figure-box-09::before {
   content: '';
   position: absolute;
   top: 0;
@@ -1307,9 +1307,28 @@ button,input,select,textarea,label {
   transform: rotateZ(45deg) scale(1.5)
 }
 
+.hero-figure-box-11 {
+  left: 20.2%;
+  top: 41.9%;
+  width: 28.03%;
+  height: 37.37%;
+  /* background: linear-gradient(to left top, #563BFF, rgba(0,191,251,0)); */
+  background: #563BFF;
+  transform: rotateZ(45deg);
+}
+
+.hero-figure-box-11::before {
+  content: '';
+  display: inline-block;
+  background: linear-gradient(to right, #15181D 0%, rgba(21,24,29,0) 60%);
+  /* background: linear-gradient(to left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.64) 100%); */
+  transform: rotateZ(45deg) scale(1.5)
+}
+
 .hero-figure-box-02 {
   left: 61.3%;
-  top: 64.1%;
+  /* top: 64.1%; */
+  top: 80%;
   width: 37.87%;
   height: 50.50%;
   background: linear-gradient(to left top, #4228E4, rgba(2,112,215,0));
