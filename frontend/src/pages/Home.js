@@ -72,7 +72,28 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-
+            <section>
+                <div className='w-[100vw] h-[300px] bg-red-200'></div>
+            </section>
+            <section>
+                <div className='
+                flex justify-center
+                w-[100vw] h-auto
+                bg-blue-200
+                py-[30px]
+                '>
+                    <div className='w-[60vw] h-auto bg-gray-400 px-[15px] py-[40px]'>
+                        <div className='w-full h-[200px] bg-slate-700'>
+                            <div className='flex items-center w-full h-auto bg-lime-300 px-[15px] py-[10px]'>
+                                <div className='flex-none w-[70px] h-[70px] bg-green-700 resize-none'></div>
+                                <div className='w-[500px] h-auto bg-purple-500'>
+                                    <p className='text-black font-extrabold'>PT. ALPHA TECH INDONESIANA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="features section">
                 <div class="container">
 					<div class="features-inner section-inner has-bottom-divider">
