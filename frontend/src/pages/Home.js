@@ -82,12 +82,20 @@ const Home = () => {
                 bg-blue-200
                 py-[30px]
                 '>
-                    <div className='w-[60vw] h-auto bg-gray-400 px-[15px] py-[40px]'>
-                        <div className='w-full h-[200px] bg-slate-700'>
-                            <div className='flex items-center w-full h-auto bg-lime-300 px-[15px] py-[10px]'>
-                                <div className='flex-none w-[70px] h-[70px] bg-green-700 resize-none'></div>
-                                <div className='w-[500px] h-auto bg-purple-500'>
-                                    <p className='text-black font-extrabold'>PT. ALPHA TECH INDONESIANA</p>
+                    <div className='w-[80vw] h-auto bg-gray-400 px-[15px] py-[40px]'>
+                        <div className='w-full h-auto bg-slate-700'>
+                            <div className='flex w-full h-auto bg-lime-300 px-[15px] py-[10px]'>
+                                <div className='flex-none w-[80px] h-auto bg-green-700 resize-none'></div>
+                                <div className='w-auto h-auto bg-purple-500'>
+                                    <p className='text-black font-extrabold m-0 text-base leading-4'>PT. ALPHA TECH INDONESIANA</p>
+                                    <p className='text-black font-medium text-xs mt-0 mb-0'>Full Time . 2 years 4 months</p>
+                                    <p className='text-gray-500 font-medium text-xs mt-[-3px] mb-0 leading-relaxed'>Kuburan gang 1 shaf ke-5 dari pohon pertama, nisan corak granite putih</p>
+                                </div>
+                            </div>
+                            <div className='w-full h-auto bg-red-500 px-[15px]'>
+                                <div className='w-full h-auto bg-slate-500'>
+                                    <div className='w-full h-[50px] bg-blue-500 mb-[20px]'></div>
+                                    <div className='w-full h-[200px] bg-slate-900'></div>
                                 </div>
                             </div>
                         </div>
