@@ -73,29 +73,52 @@ const Home = () => {
                 </div>
             </section>
             <section>
-                <div className='w-[100vw] h-[300px] bg-red-200'></div>
+                <div className='w-[100vw] h-[300px] bg-[#1E2025]'></div>
             </section>
             <section>
                 <div className='
                 flex justify-center
                 w-[100vw] h-auto
-                bg-blue-200
+                bg-[#1E2025]
                 py-[30px]
                 '>
-                    <div className='w-[80vw] h-auto bg-gray-400 px-[15px] py-[40px]'>
-                        <div className='w-full h-auto bg-slate-700'>
-                            <div className='flex w-full h-auto bg-lime-300 px-[15px] py-[10px]'>
-                                <div className='flex-none w-[80px] h-auto bg-green-700 resize-none'></div>
-                                <div className='w-auto h-auto bg-purple-500'>
-                                    <p className='text-black font-extrabold m-0 text-base leading-4'>PT. ALPHA TECH INDONESIANA</p>
-                                    <p className='text-black font-medium text-xs mt-0 mb-0'>Full Time . 2 years 4 months</p>
-                                    <p className='text-gray-500 font-medium text-xs mt-[-3px] mb-0 leading-relaxed'>Kuburan gang 1 shaf ke-5 dari pohon pertama, nisan corak granite putih</p>
+                    <div className='w-[80vw] h-auto bg-transparent px-[15px] py-[40px]'>
+                        <p className='text-white font-extrabold text-3xl'>Experience</p>
+                        <div className='w-full h-auto bg-transparent'>
+                            <div className='flex w-full h-auto bg-transparent px-[15px] py-[10px]'>
+                                <div className='flex-none w-[65px] h-auto bg-transparent'>
+                                    <img className='w-full h-auto' src={images['logo_rama.svg']} alt="" />
+                                </div>
+                                <div className='w-auto h-auto bg-transparent pl-[15px]'>
+                                    <p className='text-white font-extrabold m-0 text-base leading-4'>PT. ALPHA TECH INDONESIANA</p>
+                                    <p className='text-white font-medium text-xs mt-0 mb-0'>Full Time . 2 years 4 months</p>
+                                    <p className='text-gray-300 font-medium text-xs mt-[-3px] mb-0 leading-relaxed'>Kuburan gang 1 shaf ke-5 dari pohon pertama, nisan corak granite putih</p>
                                 </div>
                             </div>
-                            <div className='w-full h-auto bg-red-500 px-[15px]'>
-                                <div className='w-full h-auto bg-slate-500'>
-                                    <div className='w-full h-[50px] bg-blue-500 mb-[20px]'></div>
-                                    <div className='w-full h-[200px] bg-slate-900'></div>
+                            <div className='w-full h-auto bg-transparent px-[15px]'>
+                                <div className='w-full h-auto bg-transparent'>
+                                    <div className='flex w-full h-auto bg-transparent mb-[10px] shadow shadow-[#6244D6] rounded'>
+                                        <div className='flex-none w-[80px] h-auto bg-transparent'></div>
+                                        <div className='w-auto h-auto bg-transparent py-[8px]'>
+                                            <p className='text-white font-extrabold text-base m-0'>Generalist</p>
+                                        </div>
+                                    </div>
+                                    <div className='flex w-full h-auto bg-transparent'>
+                                        <div className='flex-none w-[65px] h-auto bg-transparent px-[5px] py-[10px]'>
+                                            <div className='h-full w-[2px] bg-white mx-auto'></div>
+                                        </div>
+                                        <div className='w-auto h-auto bg-transparent py-[10px] pl-[15px]'>
+                                            <p className='text-white font-medium text-xs mt-0 mb-0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vestibulum odio nisl, vel sollicitudin tellus aliquam et. Quisque eu maximus quam.</p>
+                                            <ul className='m-0'>
+                                                <li className='text-white font-medium text-xs m-0'>Cras fermentum, lectus eget convallis pulvinar. </li>
+                                                <li className='text-white font-medium text-xs m-0'>Cras fermentum, lectus eget convallis pulvinar. </li>
+                                                <li className='text-white font-medium text-xs m-0'>Cras fermentum, lectus eget convallis pulvinar. </li>
+                                                <li className='text-white font-medium text-xs m-0'>Cras fermentum, lectus eget convallis pulvinar. </li>
+                                            </ul>
+                                            <p className='text-white font-medium text-xs mt-0 mb-0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vestibulum odio nisl, vel sollicitudin tellus aliquam et. Quisque eu maximus quam.</p>
+
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
