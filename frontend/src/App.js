@@ -5,6 +5,9 @@ import Home from './pages/Home'
 import Navbar from './components/Navbar'
 
 
+import './utils/iconLibrary';  // Import the icon library configuration
+
+
 
 function App() {
   return (

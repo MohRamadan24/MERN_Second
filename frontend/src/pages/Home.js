@@ -1,4 +1,4 @@
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import images from '../utils/importImages'
 // import mainLogo from '../assets/images/logo.svg';
 import React, { useEffect, useRef } from 'react';
@@ -9,12 +9,15 @@ import React, { useEffect, useRef } from 'react';
 const Home = () => {
 
   const myElementRef = useRef(null);
+  const cv = `${process.env.PUBLIC_URL}/CV_Resume.pdf`;
 
   useEffect(() => {
     const script = document.createElement('script');
     script.src = `${process.env.PUBLIC_URL}/js/script.js`;
     script.async = true;
     document.body.appendChild(script);
+
+    
 
     script.onload = () => {
       // Your script runs automatically, no need to call any function here
@@ -48,8 +51,48 @@ const Home = () => {
 						<div class="hero-copy">
 	                        <h1 class="hero-title mt-0 mb-0">MOH. RAMADAN</h1>
                             <h4 class="mt-0 mb-32">Quality Assurance Analyst</h4>
-	                        <p class="hero-paragraph">I am a QA Analyst with over two years of experience in software quality. With strong verbal and written communication skills, i am capable of explaining complex software issues in easy-to-understand terms.</p>
-	                        <div class="hero-cta"><a class="button button-primary" href="#">Contact Me</a><a class="button" href="#">Portofolio</a></div>
+	                        <p class="hero-paragraph mb-[30px]">I am a QA Analyst with over two years of experience in software quality. With strong verbal and written communication skills, i am capable of explaining complex software issues in easy-to-understand terms.</p>
+	                        <div class="flex flex-col h-auto w-[440px] m-auto items-center xl:flex-row xl:m-0">
+                                <a class="button button-primary justify-between w-[250px] mb-[15px] xl:mb-0 xl:mr-[10px]" href={cv} download="MOH. RAMADAN - CV.pdf">Download CV <FontAwesomeIcon className='ml-[15px] h-[15px] text-white' icon="fa-solid fa-download" /></a>
+                                <div className='flex items-center justify-center w-[450px] h-[48px] bg-red-0'>
+                                    <div className='group flex justify-center items-center w-[45px] h-[45px] mx-[7px] rounded-full bg-transparent border-2 border-[#5b43f4]'>
+                                        <div className='flex justify-center items-center w-[0px] h-[0px] rounded-full bg-[#5b43f4] relative group-hover:w-[40px] group-hover:h-[40px] duration-500'>
+                                            <a className='flex w-auto h-auto m-0 p-0 justify-center items-center' href="https://api.whatsapp.com/send?phone=6281945599109" target="_blank" rel="noopener noreferrer">
+                                                <FontAwesomeIcon className='mx-[10px] h-[25px] text-[#5b43f4] group-hover:text-white duration-300' icon="fa-brands fa-whatsapp" />
+                                                {/* <img className='mx-[10px] h-[50px] text-[#5b43f4] group-hover:text-white duration-300' src={images['wa.svg']} alt="" /> */}
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className='group flex justify-center items-center w-[45px] h-[45px] mx-[7px] rounded-full bg-transparent border-2 border-[#5b43f4]'>
+                                        <div className='flex justify-center items-center w-[0px] h-[0px] rounded-full bg-[#5b43f4] relative group-hover:w-[40px] group-hover:h-[40px] duration-500'>
+                                            <a className='flex w-auto h-auto m-0 p-0 justify-center items-center' href="#">
+                                                <FontAwesomeIcon className='mx-[10px] h-[22px] text-[#5b43f4] group-hover:text-white duration-300' icon="fa-brands fa-facebook" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className='group flex justify-center items-center w-[45px] h-[45px] mx-[7px] rounded-full bg-transparent border-2 border-[#5b43f4]'>
+                                        <div className='flex justify-center items-center w-[0px] h-[0px] rounded-full bg-[#5b43f4] relative group-hover:w-[40px] group-hover:h-[40px] duration-500'>
+                                            <a className='flex w-auto h-auto m-0 p-0 justify-center items-center' href="#">
+                                                <FontAwesomeIcon className='mx-[10px] h-[22px] text-[#5b43f4] group-hover:text-white duration-500' icon="fa-brands fa-twitter" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className='group flex justify-center items-center w-[45px] h-[45px] mx-[7px] rounded-full bg-transparent border-2 border-[#5b43f4]'>
+                                        <div className='flex justify-center items-center w-[0px] h-[0px] rounded-full bg-[#5b43f4] relative group-hover:w-[40px] group-hover:h-[40px] duration-500'>
+                                            <a className='flex w-auto h-auto m-0 p-0 justify-center items-center' href="https://www.linkedin.com/in/moh-ramadan-a26453264" target="_blank" rel="noopener noreferrer">
+                                                <FontAwesomeIcon className='mx-[10px] h-[22px] text-[#5b43f4] group-hover:text-white duration-500' icon="fa-brands fa-linkedin" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className='group flex justify-center items-center w-[45px] h-[45px] mx-[7px] rounded-full bg-transparent border-2 border-[#5b43f4]'>
+                                        <div className='flex justify-center items-center w-[0px] h-[0px] rounded-full bg-[#5b43f4] relative group-hover:w-[40px] group-hover:h-[40px] duration-500'>
+                                            <a className='flex w-auto h-auto m-0 p-0 justify-center items-center' href="https://github.com/MohRamadan24" target="_blank" rel="noopener noreferrer">
+                                                <FontAwesomeIcon className='mx-[10px] h-[22px] text-[#5b43f4] group-hover:text-white duration-500' icon="fa-brands fa-github" />
+                                            </a>
+                                        </div>
+                                    </div>        
+                                </div>
+                            </div>
 						</div>
 						<div class="hero-figure anime-element" ref={myElementRef}>
 							<svg class="placeholder" width="528" height="396" viewBox="0 0 528 396">
@@ -75,49 +118,187 @@ const Home = () => {
             <section>
                 <div className='w-[100vw] h-[300px] bg-[#1E2025]'></div>
             </section>
-            <section>
+            <section className='w-full justify-center h-auto'>
                 <div className='
-                flex justify-center
-                w-[100vw] h-auto
-                bg-[#1E2025]
+                flex flex-wrap
+                justify-center
+                w-full h-auto
                 py-[30px]
+                xl:flex-wrap
                 '>
-                    <div className='w-[80vw] h-auto bg-transparent px-[15px] py-[40px]'>
-                        <p className='text-white font-extrabold text-3xl'>Experience</p>
-                        <div className='w-full h-auto bg-transparent'>
-                            <div className='flex w-full h-auto bg-transparent px-[15px] py-[10px]'>
-                                <div className='flex-none w-[65px] h-auto bg-transparent'>
-                                    <img className='w-full h-auto' src={images['logo_rama.svg']} alt="" />
+                    <div className='flex w-full flex-col h-auto bg-transparent px-[35px] xl:w-[800px]'>
+                        <div className='flex flex-col items-center w-full h-auto bg-transparent mb-[70px]'>
+                            <div className='flex flex-col items-center h-auto'>
+                                <p className='flex flex-col text-white w-auto font-extrabold text-3xl'>Professional Experience</p>
+                            </div>
+                            <div className='flex flex-col w-full h-auto bg-transparent mb-[30px]'>
+                                <div className='flex w-auto justify-center h-auto bg-transparent px-[15px] py-[10px]'>
+                                    <div className='flex-none w-[65px] h-auto bg-transparent'>
+                                        <img className='w-full h-auto' src={images['logo_rama.svg']} alt="" />
+                                    </div>
+                                    <div className='flex flex-col w-auto h-auto bg-transparent pl-[15px]'>
+                                        <p className='text-white font-extrabold m-0 text-base leading-4'>PT. ALPHA TECH INDONESIANA</p>
+                                        <p className='text-white font-medium text-xs mt-0 mb-0'>Full Time . 2 years 4 months</p>
+                                        <p className='text-gray-300 font-medium text-xs mt-[-3px] mb-0 leading-relaxed'>Kuburan gang 1 shaf ke-5 dari pohon pertama, nisan corak granite putih</p>
+                                    </div>
                                 </div>
-                                <div className='w-auto h-auto bg-transparent pl-[15px]'>
-                                    <p className='text-white font-extrabold m-0 text-base leading-4'>PT. ALPHA TECH INDONESIANA</p>
-                                    <p className='text-white font-medium text-xs mt-0 mb-0'>Full Time . 2 years 4 months</p>
-                                    <p className='text-gray-300 font-medium text-xs mt-[-3px] mb-0 leading-relaxed'>Kuburan gang 1 shaf ke-5 dari pohon pertama, nisan corak granite putih</p>
+                                <div className='flex w-auto justify-center h-auto bg-transparent ml-[80px]'>
+                                    <div className='flex justify-center w-auto h-auto bg-transparent px-[20px]'>
+                                        <div className='w-[1px] h-full bg-white relative left-2'></div>
+                                        <div className='w-[19px] h-[19px] rounded-full bg-white mt-[30px]'></div>
+                                    </div>
+                                    <div className='w-[450px] h-auto bg-transparent px-[25px] py-[9px] my-[10px] rounded-md border'>
+                                        <p className='text-white font-semibold text-md mt-0 mb-0'>Generalist</p>
+                                        <p className='text-gray-300 font-medium text-[0.7rem] mt-[-3px] leading-relaxed mb-[10px]'>January 2004 - March 2024 . 20 years 2 months</p>
+                                        {/* <p className='text-white font-medium text-xs mt-[-3px] mb-[5px] leading-relaxed'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad quis nostrud.</p> */}
+                                    </div>
+                                </div>
+                                <div className='flex w-auto justify-center h-auto bg-transparent ml-[80px]'>
+                                    <div className='flex justify-center w-auto h-auto bg-transparent px-[20px]'>
+                                        <div className='w-[1px] h-full bg-white relative left-2'></div>
+                                        <div className='w-[19px] h-[19px] rounded-full bg-white mt-[30px]'></div>
+                                    </div>
+                                    <div className='w-[450px] h-auto bg-transparent px-[25px] py-[9px] my-[10px] rounded-md border'>
+                                        <p className='text-white font-semibold text-md mt-0 mb-0'>Generalist</p>
+                                        <p className='text-gray-300 font-medium text-[0.7rem] mt-[-3px] leading-relaxed mb-[10px]'>January 2004 - March 2024 . 20 years 2 months</p>
+                                        {/* <p className='text-white font-medium text-xs mt-[-3px] mb-[5px] leading-relaxed'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad quis nostrud.</p> */}
+                                    </div>
+                                </div>
+                                <div className='flex w-auto justify-center h-auto bg-transparent ml-[80px]'>
+                                    <div className='flex justify-center w-auto h-auto bg-transparent px-[20px]'>
+                                        <div className='w-[1px] h-full bg-white relative left-2'></div>
+                                        <div className='w-[19px] h-[19px] rounded-full bg-white mt-[30px]'></div>
+                                    </div>
+                                    <div className='w-[450px] h-auto bg-transparent px-[25px] py-[9px] my-[10px] rounded-md border'>
+                                        <p className='text-white font-semibold text-md mt-0 mb-0'>Generalist</p>
+                                        <p className='text-gray-300 font-medium text-[0.7rem] mt-[-3px] leading-relaxed mb-[10px]'>January 2004 - March 2024 . 20 years 2 months</p>
+                                        {/* <p className='text-white font-medium text-xs mt-[-3px] mb-[5px] leading-relaxed'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad quis nostrud.</p> */}
+                                    </div>
                                 </div>
                             </div>
-                            <div className='w-full h-auto bg-transparent px-[15px]'>
-                                <div className='w-full h-auto bg-transparent'>
-                                    <div className='flex w-full h-auto bg-transparent mb-[10px] shadow shadow-[#6244D6] rounded'>
-                                        <div className='flex-none w-[80px] h-auto bg-transparent'></div>
-                                        <div className='w-auto h-auto bg-transparent py-[8px]'>
-                                            <p className='text-white font-extrabold text-base m-0'>Generalist</p>
-                                        </div>
+                            <div className='flex flex-col w-full h-auto bg-transparent mb-[30px]'>
+                                <div className='flex w-auto justify-center h-auto bg-transparent px-[15px] py-[10px]'>
+                                    <div className='flex-none w-[65px] h-auto bg-transparent'>
+                                        <img className='w-full h-auto' src={images['logo_rama.svg']} alt="" />
                                     </div>
-                                    <div className='flex w-full h-auto bg-transparent'>
-                                        <div className='flex-none w-[65px] h-auto bg-transparent px-[5px] py-[10px]'>
-                                            <div className='h-full w-[2px] bg-white mx-auto'></div>
-                                        </div>
-                                        <div className='w-auto h-auto bg-transparent py-[10px] pl-[15px]'>
-                                            <p className='text-white font-medium text-xs mt-0 mb-0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vestibulum odio nisl, vel sollicitudin tellus aliquam et. Quisque eu maximus quam.</p>
-                                            <ul className='m-0'>
-                                                <li className='text-white font-medium text-xs m-0'>Cras fermentum, lectus eget convallis pulvinar. </li>
-                                                <li className='text-white font-medium text-xs m-0'>Cras fermentum, lectus eget convallis pulvinar. </li>
-                                                <li className='text-white font-medium text-xs m-0'>Cras fermentum, lectus eget convallis pulvinar. </li>
-                                                <li className='text-white font-medium text-xs m-0'>Cras fermentum, lectus eget convallis pulvinar. </li>
-                                            </ul>
-                                            <p className='text-white font-medium text-xs mt-0 mb-0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vestibulum odio nisl, vel sollicitudin tellus aliquam et. Quisque eu maximus quam.</p>
-
-                                        </div>
+                                    <div className='flex flex-col w-auto h-auto bg-transparent pl-[15px]'>
+                                        <p className='text-white font-extrabold m-0 text-base leading-4'>PT. ALPHA TECH INDONESIANA</p>
+                                        <p className='text-white font-medium text-xs mt-0 mb-0'>Full Time . 2 years 4 months</p>
+                                        <p className='text-gray-300 font-medium text-xs mt-[-3px] mb-0 leading-relaxed'>Kuburan gang 1 shaf ke-5 dari pohon pertama, nisan corak granite putih</p>
+                                    </div>
+                                </div>
+                                <div className='flex w-auto justify-center h-auto bg-transparent ml-[80px]'>
+                                    <div className='flex justify-center w-auto h-auto bg-transparent px-[20px]'>
+                                        <div className='w-[1px] h-full bg-white relative left-2'></div>
+                                        <div className='w-[19px] h-[19px] rounded-full bg-white mt-[30px]'></div>
+                                    </div>
+                                    <div className='w-[450px] h-auto bg-transparent px-[25px] py-[9px] my-[10px] rounded-md border'>
+                                        <p className='text-white font-semibold text-md mt-0 mb-0'>Generalist</p>
+                                        <p className='text-gray-300 font-medium text-[0.7rem] mt-[-3px] leading-relaxed mb-[10px]'>January 2004 - March 2024 . 20 years 2 months</p>
+                                        {/* <p className='text-white font-medium text-xs mt-[-3px] mb-[5px] leading-relaxed'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad quis nostrud.</p> */}
+                                    </div>
+                                </div>
+                                <div className='flex w-auto justify-center h-auto bg-transparent ml-[80px]'>
+                                    <div className='flex justify-center w-auto h-auto bg-transparent px-[20px]'>
+                                        <div className='w-[1px] h-full bg-white relative left-2'></div>
+                                        <div className='w-[19px] h-[19px] rounded-full bg-white mt-[30px]'></div>
+                                    </div>
+                                    <div className='w-[450px] h-auto bg-transparent px-[25px] py-[9px] my-[10px] rounded-md border'>
+                                        <p className='text-white font-semibold text-md mt-0 mb-0'>Generalist</p>
+                                        <p className='text-gray-300 font-medium text-[0.7rem] mt-[-3px] leading-relaxed mb-[10px]'>January 2004 - March 2024 . 20 years 2 months</p>
+                                        {/* <p className='text-white font-medium text-xs mt-[-3px] mb-[5px] leading-relaxed'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad quis nostrud.</p> */}
+                                    </div>
+                                </div>
+                                <div className='flex w-auto justify-center h-auto bg-transparent ml-[80px]'>
+                                    <div className='flex justify-center w-auto h-auto bg-transparent px-[20px]'>
+                                        <div className='w-[1px] h-full bg-white relative left-2'></div>
+                                        <div className='w-[19px] h-[19px] rounded-full bg-white mt-[30px]'></div>
+                                    </div>
+                                    <div className='w-[450px] h-auto bg-transparent px-[25px] py-[9px] my-[10px] rounded-md border'>
+                                        <p className='text-white font-semibold text-md mt-0 mb-0'>Generalist</p>
+                                        <p className='text-gray-300 font-medium text-[0.7rem] mt-[-3px] leading-relaxed mb-[10px]'>January 2004 - March 2024 . 20 years 2 months</p>
+                                        {/* <p className='text-white font-medium text-xs mt-[-3px] mb-[5px] leading-relaxed'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad quis nostrud.</p> */}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='flex flex-col w-full h-auto bg-transparent px-[35px] xl:w-[800px]'>
+                        <div className='flex flex-col items-center w-full h-auto bg-transparent mb-[70px]'>
+                            <div className='flex flex-col items-center h-auto'>
+                                <p className='flex flex-col text-white w-auto font-extrabold text-3xl'>Freelance and Part-Time Work</p>
+                            </div>
+                            <div className='flex flex-col w-full h-auto bg-transparent mb-[30px]'>
+                                <div className='flex w-auto justify-center h-auto bg-transparent px-[15px] py-[10px]'>
+                                    <div className='flex-none w-[65px] h-auto bg-transparent'>
+                                        <img className='w-full h-auto' src={images['logo_rama.svg']} alt="" />
+                                    </div>
+                                    <div className='flex flex-col w-auto h-auto bg-transparent pl-[15px]'>
+                                        <p className='text-white font-extrabold m-0 text-base leading-4'>PT. ALPHA TECH INDONESIANA</p>
+                                        <p className='text-white font-medium text-xs mt-0 mb-0'>Full Time . 2 years 4 months</p>
+                                        <p className='text-gray-300 font-medium text-xs mt-[-3px] mb-0 leading-relaxed'>Kuburan gang 1 shaf ke-5 dari pohon pertama, nisan corak granite putih</p>
+                                    </div>
+                                </div>
+                                <div className='flex w-auto justify-center h-auto bg-transparent ml-[80px]'>
+                                    <div className='flex justify-center w-auto h-auto bg-transparent px-[20px]'>
+                                        <div className='w-[1px] h-full bg-white relative left-2'></div>
+                                        <div className='w-[19px] h-[19px] rounded-full bg-white mt-[50px]'></div>
+                                    </div>
+                                    <div className='w-[450px] h-auto bg-transparent px-[25px] py-[9px] my-[10px] rounded-md border'>
+                                        <p className='text-white font-semibold text-md mt-0 mb-0'>Generalist</p>
+                                        <p className='text-gray-300 font-medium text-[0.7rem] mt-[-3px] leading-relaxed mb-[10px]'>January 2004 - March 2024 . 20 years 2 months</p>
+                                        {/* <p className='text-white font-medium text-xs mt-[-3px] mb-[5px] leading-relaxed'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad quis nostrud.</p> */}
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='flex flex-col w-full h-auto bg-transparent mb-[30px]'>
+                                <div className='flex w-auto justify-center h-auto bg-transparent px-[15px] py-[10px]'>
+                                    <div className='flex-none w-[65px] h-auto bg-transparent'>
+                                        <img className='w-full h-auto' src={images['logo_rama.svg']} alt="" />
+                                    </div>
+                                    <div className='flex flex-col w-auto h-auto bg-transparent pl-[15px]'>
+                                        <p className='text-white font-extrabold m-0 text-base leading-4'>PT. ALPHA TECH INDONESIANA</p>
+                                        <p className='text-white font-medium text-xs mt-0 mb-0'>Full Time . 2 years 4 months</p>
+                                        <p className='text-gray-300 font-medium text-xs mt-[-3px] mb-0 leading-relaxed'>Kuburan gang 1 shaf ke-5 dari pohon pertama, nisan corak granite putih</p>
+                                    </div>
+                                </div>
+                                <div className='flex w-auto justify-center h-auto bg-transparent ml-[80px]'>
+                                    <div className='flex justify-center w-auto h-auto bg-transparent px-[20px]'>
+                                        <div className='w-[1px] h-full bg-white relative left-2'></div>
+                                        <div className='w-[19px] h-[19px] rounded-full bg-white mt-[50px]'></div>
+                                    </div>
+                                    <div className='w-[450px] h-auto bg-transparent px-[25px] py-[9px] my-[10px] rounded-md border'>
+                                        <p className='text-white font-semibold text-md mt-0 mb-0'>Generalist</p>
+                                        <p className='text-gray-300 font-medium text-[0.7rem] mt-[-3px] leading-relaxed mb-[10px]'>January 2004 - March 2024 . 20 years 2 months</p>
+                                        {/* <p className='text-white font-medium text-xs mt-[-3px] mb-[5px] leading-relaxed'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad quis nostrud.</p> */}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='flex flex-col items-center w-full h-auto bg-transparent'>
+                            <div className='flex flex-col items-center h-auto'>
+                                <p className='flex flex-col text-white w-auto font-extrabold text-3xl'>Entrepreneurial Experience</p>
+                            </div>
+                            <div className='flex flex-col w-full h-auto bg-transparent mb-[30px]'>
+                                <div className='flex w-auto justify-center h-auto bg-transparent px-[15px] py-[10px]'>
+                                    <div className='flex-none w-[65px] h-auto bg-transparent'>
+                                        <img className='w-full h-auto' src={images['logo_rama.svg']} alt="" />
+                                    </div>
+                                    <div className='flex flex-col w-auto h-auto bg-transparent pl-[15px]'>
+                                        <p className='text-white font-extrabold m-0 text-base leading-4'>PT. ALPHA TECH INDONESIANA</p>
+                                        <p className='text-white font-medium text-xs mt-0 mb-0'>Full Time . 2 years 4 months</p>
+                                        <p className='text-gray-300 font-medium text-xs mt-[-3px] mb-0 leading-relaxed'>Kuburan gang 1 shaf ke-5 dari pohon pertama, nisan corak granite putih</p>
+                                    </div>
+                                </div>
+                                <div className='flex w-auto justify-center h-auto bg-transparent ml-[80px]'>
+                                    <div className='flex justify-center w-auto h-auto bg-transparent px-[20px]'>
+                                        <div className='w-[1px] h-full bg-white relative left-2'></div>
+                                        <div className='w-[19px] h-[19px] rounded-full bg-white mt-[50px]'></div>
+                                    </div>
+                                    <div className='w-[450px] h-auto bg-transparent px-[25px] py-[9px] my-[10px] rounded-md border'>
+                                        <p className='text-white font-semibold text-md mt-0 mb-0'>Generalist</p>
+                                        <p className='text-gray-300 font-medium text-[0.7rem] mt-[-3px] leading-relaxed mb-[10px]'>January 2004 - March 2024 . 20 years 2 months</p>
+                                        {/* <p className='text-white font-medium text-xs mt-[-3px] mb-[5px] leading-relaxed'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad quis nostrud.</p> */}
                                     </div>
                                 </div>
                             </div>
@@ -125,6 +306,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+            
             <section class="features section">
                 <div class="container">
 					<div class="features-inner section-inner has-bottom-divider">
