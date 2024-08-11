@@ -45,7 +45,7 @@ const Home = () => {
         </header>
 
         <main>
-            <section class="hero">
+            <section class="hero mb-[200px]">
                 <div class="container">
                     <div class="hero-inner">
 						<div class="hero-copy">
@@ -115,11 +115,45 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section>
-                <div className='w-[1500px] h-[250px] bg-[#1E2025] mx-auto'>
-                    <div className='h-[100px] w-auto bg-transparent pr-[50px] mx-[50px]'>
-                        <img className='w-auto h-full' src={images['SERVICES.svg']} alt="" />
-                        <p className=''>My Services</p>
+            <section className='mb-[150px]'>
+                <div className='flex flex-col w-auto h-auto bg-[#1E2025] mx-auto'>
+                    <div className='h-auto w-auto w-max-[1200px] bg-transparent pr-[50px] mx-auto px-[40px]'>
+                        <div className='h-auto max-w-[1000px] mx-auto'>
+                            <img className='w-auto h-[100px]' src={images['SERVICES.svg']} alt="" />
+                            <p className='text-2xl font-extrabold text-[#FBFCFF] mt-[-60px] ml-[5px] mb-[50px]'>My Services</p>
+                        </div>
+                        <div className='flex flex-wrap h-auto max-w-[1200px] bg-transparent mx-auto justify-center'>
+                            <div className='h-[220px] w-[320px] p-[30px] mx-[10px] mb-[20px] bg-[#25282F]'>
+                                <FontAwesomeIcon className='h-[55px] text-[#5b43f4] group-hover:text-white duration-500 mb-[10px]' icon="fa-brands fa-twitter" />
+                                <p className='text-white font-extrabold text-sm leading-4 mb-[10px]'>3D Assets Design</p>
+                                <p className='text-[#b1bed6] font-medium text-[0.72rem] mb-0 leading-relaxed'>Kuburan gang 1 shaf ke-5 dari pohon pertama, nisan corak granite putih</p>
+                            </div>
+                            <div className='h-[220px] w-[320px] p-[30px] mx-[10px] mb-[20px] bg-[#25282F]'>
+                                <FontAwesomeIcon className='h-[55px] text-[#5b43f4] group-hover:text-white duration-500 mb-[10px]' icon="fa-brands fa-twitter" />
+                                <p className='text-white font-extrabold text-sm leading-4 mb-[10px]'>3D Assets Design</p>
+                                <p className='text-[#b1bed6] font-medium text-[0.72rem] mb-0 leading-relaxed'>Kuburan gang 1 shaf ke-5 dari pohon pertama, nisan corak granite putih</p>
+                            </div>
+                            <div className='h-[220px] w-[320px] p-[30px] mx-[10px] mb-[20px] bg-[#25282F]'>
+                                <FontAwesomeIcon className='h-[55px] text-[#5b43f4] group-hover:text-white duration-500 mb-[10px]' icon="fa-brands fa-twitter" />
+                                <p className='text-white font-extrabold text-sm leading-4 mb-[10px]'>3D Assets Design</p>
+                                <p className='text-[#b1bed6] font-medium text-[0.72rem] mb-0 leading-relaxed'>Kuburan gang 1 shaf ke-5 dari pohon pertama, nisan corak granite putih</p>
+                            </div>
+                            <div className='h-[220px] w-[320px] p-[30px] mx-[10px] mb-[20px] bg-[#25282F]'>
+                                <FontAwesomeIcon className='h-[55px] text-[#5b43f4] group-hover:text-white duration-500 mb-[10px]' icon="fa-brands fa-twitter" />
+                                <p className='text-white font-extrabold text-sm leading-4 mb-[10px]'>3D Assets Design</p>
+                                <p className='text-[#b1bed6] font-medium text-[0.72rem] mb-0 leading-relaxed'>Kuburan gang 1 shaf ke-5 dari pohon pertama, nisan corak granite putih</p>
+                            </div>
+                            <div className='h-[220px] w-[320px] p-[30px] mx-[10px] mb-[20px] bg-[#25282F]'>
+                                <FontAwesomeIcon className='h-[55px] text-[#5b43f4] group-hover:text-white duration-500 mb-[10px]' icon="fa-brands fa-twitter" />
+                                <p className='text-white font-extrabold text-sm leading-4 mb-[10px]'>3D Assets Design</p>
+                                <p className='text-[#b1bed6] font-medium text-[0.72rem] mb-0 leading-relaxed'>Kuburan gang 1 shaf ke-5 dari pohon pertama, nisan corak granite putih</p>
+                            </div>
+                            <div className='h-[220px] w-[320px] p-[30px] mx-[10px] mb-[20px] bg-[#25282F]'>
+                                <FontAwesomeIcon className='h-[55px] text-[#5b43f4] group-hover:text-white duration-500 mb-[10px]' icon="fa-brands fa-twitter" />
+                                <p className='text-white font-extrabold text-sm leading-4 mb-[10px]'>3D Assets Design</p>
+                                <p className='text-[#b1bed6] font-medium text-[0.72rem] mb-0 leading-relaxed'>Kuburan gang 1 shaf ke-5 dari pohon pertama, nisan corak granite putih</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -131,7 +165,7 @@ const Home = () => {
                 py-[30px]
                 xl:flex-wrap
                 '>
-                    <div className='flex w-full flex-col h-auto bg-transparent px-[35px] xl:w-[800px]'>
+                    <div className='flex w-full flex-col h-auto bg-transparent px-[35px] xl:w-[550px]'>
                         <div className='flex flex-col items-center w-full h-auto bg-transparent mb-[70px]'>
                             <div className='flex flex-col w-full h-auto'>
                                 <p className='flex flex-col text-white w-auto font-extrabold text-3xl'>Professional Experience</p>
@@ -228,7 +262,7 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='flex w-full flex-col h-auto bg-transparent px-[35px] xl:w-[800px]'>
+                    <div className='flex w-full flex-col h-auto bg-transparent px-[35px] xl:w-[550px]'>
                         <div className='flex flex-col items-center w-full h-auto bg-transparent mb-[70px]'>
                             <div className='flex flex-col w-full h-auto'>
                                 <p className='flex flex-col text-white w-auto font-extrabold text-3xl'>Freelance and Part-Time Work</p>
