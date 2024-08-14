@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 // pages & components
 import Home from './pages/Home'
+import Method from './pages/MethodologiesSection'
 import Navbar from './components/Navbar'
 
 
@@ -17,6 +18,10 @@ function App() {
             <Route 
               path="/" 
               element={<Home />} 
+            />
+            <Route 
+              path="/Method" 
+              element={<Method />} 
             />
           </Routes>
       </BrowserRouter>
