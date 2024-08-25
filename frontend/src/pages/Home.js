@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import images from '../utils/importImages'
 // import mainLogo from '../assets/images/logo.svg';
 import React, { useEffect, useRef } from 'react';
+import MethodologiesSection from './MethodologiesSection';
 
 
 
@@ -119,8 +120,8 @@ const Home = () => {
                 <div className='flex flex-col w-auto h-auto bg-[#1E2025] mx-auto'>
                     <div className='h-auto w-auto w-max-[1200px] bg-transparent pr-[50px] mx-auto px-[40px]'>
                         <div className='h-auto max-w-[1000px] mx-auto'>
-                            <img className='w-auto h-[100px]' src={images['SERVICES.svg']} alt="" />
-                            <p className='text-2xl font-extrabold text-[#FBFCFF] mt-[-60px] ml-[5px] mb-[50px]'>My Services</p>
+                            <img className='w-auto h-[70px]' src={images['SERVICES.svg']} alt="" />
+                            <p className='text-xl font-extrabold text-[#FBFCFF] mt-[-48px] ml-[5px] mb-[50px]'>My Services</p>
                         </div>
                         <div className='flex flex-wrap h-auto max-w-[1200px] bg-transparent mx-auto justify-center'>
                             <div className='h-[220px] w-[320px] p-[30px] mx-[10px] mb-[20px] bg-[#25282F]'>
@@ -344,7 +345,29 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            
+            <section className='w-full justify-center h-auto mb-[150px]'>
+                <div className='
+                flex flex-wrap
+                justify-center
+                w-full h-auto
+                py-[30px]
+                xl:flex-wrap
+                '>
+                    <div className='flex w-full flex-col h-auto bg-transparent px-[35px] xl:w-[1400px]'>
+                        <MethodologiesSection />
+                    </div>
+                </div>
+            </section>
+            <section class="cta section">
+				<div class="container">
+					<div class="cta-inner section-inner">
+						<h3 class="section-title mt-0">Still not convinced on buying?</h3>
+						<div class="cta-cta">
+							<a class="button button-primary button-wide-mobile" href="#">Get in touch</a>
+						</div>
+					</div>
+				</div>
+			</section>
             <section class="features section">
                 <div class="container">
 					<div class="features-inner section-inner has-bottom-divider">
@@ -447,17 +470,6 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-
-			<section class="cta section">
-				<div class="container">
-					<div class="cta-inner section-inner">
-						<h3 class="section-title mt-0">Still not convinced on buying?</h3>
-						<div class="cta-cta">
-							<a class="button button-primary button-wide-mobile" href="#">Get in touch</a>
-						</div>
-					</div>
-				</div>
-			</section>
         </main>
 
         <footer class="site-footer">
