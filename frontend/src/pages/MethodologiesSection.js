@@ -22,8 +22,8 @@ const MethodologiesSection = () => {
         {/* Mini Cards Grid (Always on the right side) */}
         <div className="w-full my-auto h-auto">
           <div className="grid grid-cols-1 grid-rows-1 gap-1 w-full">
-            <div className='h-auto max-w-[1000px]'>
-                <img className='w-auto h-[70px]' src={images['METHODOLOGIES.svg']} alt="" />
+            <div className='h-auto w-full justify-end'>
+                <img className='w-fit h-[70px]' src={images['METHODOLOGIES.svg']} alt="" />
                 <p className='text-xl font-extrabold text-[#FBFCFF] mt-[-48px] ml-[5px] mb-[50px]'>Methodologies I've Utilized</p>
             </div>
             {cards
