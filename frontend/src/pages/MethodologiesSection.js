@@ -11,7 +11,7 @@ const MethodologiesSection = () => {
       <div className="max-w-[1600px] w-auto h-[450px] grid grid-cols-1 gap-4 xl:grid-cols-2">
         {/* Big Card (Always on the left side) */}
         <div
-          className="col-span-1 bg-blue-300 flex items-center justify-center h-full cursor-pointer"
+          className="col-span-1 flex items-center justify-center h-full cursor-pointer"
           onClick={() => setActiveCard(activeCard)}
         >
           {/* <p className="text-white font-bold text-xl">Card {activeCard}</p> */}

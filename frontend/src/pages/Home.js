@@ -118,8 +118,8 @@ const Home = () => {
             </section>
             <section className='mb-[150px]'>
                 <div className='flex flex-col w-auto h-auto bg-[#1E2025] mx-auto'>
-                    <div className='h-auto w-auto w-max-[1200px] bg-transparent mx-auto px-[20px] xl:px-[40px]'>
-                        <div className='h-auto w-fit xl:max-w-[1000px] xl:w-auto mx-auto mb-[100px] xl:mb-[50px]'>
+                    <div className='h-auto w-auto w-max-[1200px] bg-transparent mx-auto xl:px-[40px]'>
+                        <div className='h-auto w-fit xl:max-w-[1000px] xl:w-auto mx-auto mb-[50px]'>
                             <img className='w-auto h-[70px]' src={images['SERVICES.svg']} alt="" />
                             <p className='text-2xl leading-[70px] font-extrabold text-[#FBFCFF] mt-[-70px] ml-[5px] mb-0 text-center xl:text-left'>My Services</p>
                         </div>
@@ -369,7 +369,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section className='w-full justify-center h-auto mb-[150px]'>
+            {/* <section className='w-full justify-center h-auto mb-[150px]'>
                 <div className='
                 flex flex-wrap
                 justify-center
@@ -379,6 +379,64 @@ const Home = () => {
                 '>
                     <div className='flex w-full flex-col h-auto bg-transparent px-[35px] xl:w-[1400px]'>
                         <MethodologiesSection />
+                    </div>
+                </div>
+            </section> */}
+            <section className='w-full justify-center h-auto mb-[150px]'>
+                <div className='h-auto w-fit mx-auto mb-[50px] px-[20px]'>
+                    <img className='w-auto h-[70px]' src={images['PORTOFOLIO.svg']} alt="" />
+                    <p className='text-2xl leading-[70px] font-extrabold text-[#FBFCFF] mt-[-70px] ml-[5px] mb-0 text-center'>Portofolio</p>
+                </div>
+                <div className='
+                flex flex-wrap
+                justify-center
+                w-full h-auto
+                py-[30px]
+                xl:flex-wrap
+                '>
+                    <div className='flex w-full flex-col h-auto bg-transparent px-[35px] md:w-[1400px]'>
+                        <div className="max-w-[1600px] w-auto h-fit grid grid-cols-1 gap-4 xl:grid-cols-2">
+                            <div className="grid col-span-1 h-fit gap-8">
+                                <div>
+                                    <div className='h-auto w-full bg-white p-[20px] pb-0'>
+                                        <img className='w-full' src={images['Method_1.png']} alt="" />
+                                    </div>
+                                    <div className='h-auto w-full bg-white px-[40px] py-[25px]'>
+                                        <p className='font-extrabold m-0 text-xl'>Effortless</p>
+                                        <p className='font-normal m-0 text-md'>Branding</p>
+                                    </div>
+                                </div>  
+                                <div>
+                                    <div className='h-auto w-full bg-white p-[20px] pb-0'>
+                                        <img className='w-full' src={images['Method_1.png']} alt="" />
+                                    </div>
+                                    <div className='h-auto w-full bg-white px-[40px] py-[25px]'>
+                                        <p className='font-extrabold m-0 text-xl'>Effortless</p>
+                                        <p className='font-normal m-0 text-md'>Branding</p>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div className="grid col-span-1 h-fit gap-8">
+                                <div>
+                                    <div className='h-auto w-full bg-white p-[20px] pb-0'>
+                                        <img className='w-full' src={images['Method_1.png']} alt="" />
+                                    </div>
+                                    <div className='h-auto w-full bg-white px-[40px] py-[25px]'>
+                                        <p className='font-extrabold m-0 text-xl'>Effortless</p>
+                                        <p className='font-normal m-0 text-md'>Branding</p>
+                                    </div>
+                                </div>  
+                                <div>
+                                    <div className='h-auto w-full bg-white p-[20px] pb-0'>
+                                        <img className='w-full' src={images['Method_1.png']} alt="" />
+                                    </div>
+                                    <div className='h-auto w-full bg-white px-[40px] py-[25px]'>
+                                        <p className='font-extrabold m-0 text-xl'>Effortless</p>
+                                        <p className='font-normal m-0 text-md'>Branding</p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
