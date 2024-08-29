@@ -9,9 +9,6 @@ import MethodologiesSection from './MethodologiesSection';
 
 const Home = () => {
 
-  const visible = "visible";
-  const invisible = "invisible";
-
   const myElementRef = useRef(null);
   const cv = `${process.env.PUBLIC_URL}/CV_Resume.pdf`;
 
@@ -122,15 +119,24 @@ const Home = () => {
             <section className='mb-[150px]'>
                 <div className='flex flex-col w-auto h-auto bg-[#1E2025] mx-auto'>
                     <div className='h-auto w-auto w-max-[1200px] bg-transparent mx-auto px-[20px] xl:px-[40px]'>
-                        <div className='h-auto max-w-[1000px] mx-auto mb-[50px]'>
+                        <div className='h-auto w-fit xl:max-w-[1000px] xl:w-auto mx-auto mb-[100px] xl:mb-[50px]'>
                             <img className='w-auto h-[70px]' src={images['SERVICES.svg']} alt="" />
-                            <p className='text-2xl leading-[70px] font-extrabold text-[#FBFCFF] mt-[-70px] ml-[5px] mb-0'>My Services</p>
+                            <p className='text-2xl leading-[70px] font-extrabold text-[#FBFCFF] mt-[-70px] ml-[5px] mb-0 text-center xl:text-left'>My Services</p>
                         </div>
                         <div className='flex flex-wrap h-auto max-w-[1200px] bg-transparent mx-auto justify-center'>
+                            <div className='flex h-[220px] w-[320px] p-[30px] mx-[10px] mb-[20px] bg-[#25282F]'>
+                                <FontAwesomeIcon className='h-[55px] text-[#5b43f4] group-hover:text-white duration-500 mb-[10px]' icon="fa-brands fa-twitter" />
+                                <div>
+                                    <p className='text-white font-extrabold text-sm leading-4 mb-[10px]'>3D Assets Design</p>
+                                    <p className='text-[#b1bed6] font-medium text-[0.72rem] mb-0 leading-relaxed'>Kuburan gang 1 shaf ke-5 dari pohon pertama, nisan corak granite putih</p>
+                                </div>
+                            </div>
                             <div className='h-[220px] w-[320px] p-[30px] mx-[10px] mb-[20px] bg-[#25282F]'>
                                 <FontAwesomeIcon className='h-[55px] text-[#5b43f4] group-hover:text-white duration-500 mb-[10px]' icon="fa-brands fa-twitter" />
-                                <p className='text-white font-extrabold text-sm leading-4 mb-[10px]'>3D Assets Design</p>
-                                <p className='text-[#b1bed6] font-medium text-[0.72rem] mb-0 leading-relaxed'>Kuburan gang 1 shaf ke-5 dari pohon pertama, nisan corak granite putih</p>
+                                <div>
+                                    <p className='text-white font-extrabold text-sm leading-4 mb-[10px]'>3D Assets Design</p>
+                                    <p className='text-[#b1bed6] font-medium text-[0.72rem] mb-0 leading-relaxed'>Kuburan gang 1 shaf ke-5 dari pohon pertama, nisan corak granite putih</p>
+                                </div>
                             </div>
                             <div className='h-[220px] w-[320px] p-[30px] mx-[10px] mb-[20px] bg-[#25282F]'>
                                 <FontAwesomeIcon className='h-[55px] text-[#5b43f4] group-hover:text-white duration-500 mb-[10px]' icon="fa-brands fa-twitter" />
@@ -196,10 +202,10 @@ const Home = () => {
                                         <div className='w-[1px] h-full bg-[#5742DC] relative left-2'></div>
                                         <div className='w-[19px] h-[19px] rounded-full bg-[#5742DC] mt-[30px]'></div>
                                     </div>
-                                    <div className='w-[450px] h-auto bg-transparent px-[25px] py-[9px] my-[10px] rounded-md border-2 group border-[#b1bed6] hover:border-[#5742DC] hover:bg-[#25243B] group'>
+                                    <div className='w-[450px] h-auto bg-transparent px-[25px] py-[9px] my-[10px] rounded-md border-2 group border-[#b1bed6] hover:border-[#5742DC] hover:bg-[#25243B] duration-100 group'>
                                         <p className='group-hover:text-[#FBFCFF] font-semibold text-md mt-0 mb-0'>Generalist</p>
                                         <p className='text-[#8a94a7] group-hover:text-[#A4AEC3] font-medium text-[0.7rem] mt-[-3px] leading-relaxed mb-[10px]'>January 2004 - March 2024 . 20 years 2 months</p>
-                                        <p className='text-[#b1bed6] group-hover:text-[#FBFCFF] font-medium text-xs mt-[-3px] mb-[5px] leading-relaxed hidden group-hover:flex group-hover:duration-1000'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad quis nostrud.</p>
+                                        <p className='text-[#b1bed6] max-h-0 overflow-hidden group-hover:text-[#FBFCFF] font-medium text-xs mt-[-3px] mb-[5px] leading-relaxed group-hover:max-h-[95px] duration-700'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad quis nostrud.</p>
                                     </div>
                                 </div>
                                 <div className='flex w-auto justify-center h-auto bg-transparent px-[15px]'>
@@ -209,10 +215,10 @@ const Home = () => {
                                         <div className='w-[1px] h-full bg-[#5742DC] relative left-2'></div>
                                         <div className='w-[19px] h-[19px] rounded-full bg-[#5742DC] mt-[30px]'></div>
                                     </div>
-                                    <div className='w-[450px] h-auto bg-transparent px-[25px] py-[9px] my-[10px] rounded-md border-2 group border-[#b1bed6] hover:border-[#5742DC] hover:bg-[#25243B]'>
+                                    <div className='w-[450px] h-auto bg-transparent px-[25px] py-[9px] my-[10px] rounded-md border-2 group border-[#b1bed6] hover:border-[#5742DC] hover:bg-[#25243B] duration-100 group'>
                                         <p className='group-hover:text-[#FBFCFF] font-semibold text-md mt-0 mb-0'>Generalist</p>
                                         <p className='text-[#8a94a7] group-hover:text-[#A4AEC3] font-medium text-[0.7rem] mt-[-3px] leading-relaxed mb-[10px]'>January 2004 - March 2024 . 20 years 2 months</p>
-                                        <p className='text-[#b1bed6] group-hover:text-[#FBFCFF] font-medium text-xs mt-[-3px] mb-[5px] leading-relaxed'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad quis nostrud.</p>
+                                        <p className='text-[#b1bed6] max-h-0 overflow-hidden group-hover:text-[#FBFCFF] font-medium text-xs mt-[-3px] mb-[5px] leading-relaxed group-hover:max-h-[95px] duration-700'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad quis nostrud.</p>
                                     </div>
                                 </div>
                                 <div className='flex w-auto justify-center h-auto bg-transparent px-[15px]'>
@@ -222,10 +228,10 @@ const Home = () => {
                                         <div className='w-[1px] h-full bg-[#5742DC] relative left-2'></div>
                                         <div className='w-[19px] h-[19px] rounded-full bg-[#5742DC] mt-[30px]'></div>
                                     </div>
-                                    <div className='w-[450px] h-auto bg-transparent px-[25px] py-[9px] my-[10px] rounded-md border-2 group border-[#b1bed6] hover:border-[#5742DC] hover:bg-[#25243B]'>
+                                    <div className='w-[450px] h-auto bg-transparent px-[25px] py-[9px] my-[10px] rounded-md border-2 group border-[#b1bed6] hover:border-[#5742DC] hover:bg-[#25243B] duration-100 group'>
                                         <p className='group-hover:text-[#FBFCFF] font-semibold text-md mt-0 mb-0'>Generalist</p>
                                         <p className='text-[#8a94a7] group-hover:text-[#A4AEC3] font-medium text-[0.7rem] mt-[-3px] leading-relaxed mb-[10px]'>January 2004 - March 2024 . 20 years 2 months</p>
-                                        <p className='text-[#b1bed6] group-hover:text-[#FBFCFF] font-medium text-xs mt-[-3px] mb-[5px] leading-relaxed'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad quis nostrud.</p>
+                                        <p className='text-[#b1bed6] max-h-0 overflow-hidden group-hover:text-[#FBFCFF] font-medium text-xs mt-[-3px] mb-[5px] leading-relaxed group-hover:max-h-[95px] duration-700'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad quis nostrud.</p>
                                     </div>
                                 </div>
                             </div>
@@ -245,10 +251,10 @@ const Home = () => {
                                         <div className='w-[1px] h-full bg-[#5742DC] relative left-2'></div>
                                         <div className='w-[19px] h-[19px] rounded-full bg-[#5742DC] mt-[30px]'></div>
                                     </div>
-                                    <div className='w-[450px] h-auto bg-transparent px-[25px] py-[9px] my-[10px] rounded-md border-2 group border-[#b1bed6] hover:border-[#5742DC] hover:bg-[#25243B]'>
+                                    <div className='w-[450px] h-auto bg-transparent px-[25px] py-[9px] my-[10px] rounded-md border-2 group border-[#b1bed6] hover:border-[#5742DC] hover:bg-[#25243B] duration-100 group'>
                                         <p className='group-hover:text-[#FBFCFF] font-semibold text-md mt-0 mb-0'>Generalist</p>
                                         <p className='text-[#8a94a7] group-hover:text-[#A4AEC3] font-medium text-[0.7rem] mt-[-3px] leading-relaxed mb-[10px]'>January 2004 - March 2024 . 20 years 2 months</p>
-                                        <p className='text-[#b1bed6] group-hover:text-[#FBFCFF] font-medium text-xs mt-[-3px] mb-[5px] leading-relaxed'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad quis nostrud.</p>
+                                        <p className='text-[#b1bed6] max-h-0 overflow-hidden group-hover:text-[#FBFCFF] font-medium text-xs mt-[-3px] mb-[5px] leading-relaxed group-hover:max-h-[95px] duration-700'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad quis nostrud.</p>
                                     </div>
                                 </div>
                             </div>
@@ -275,10 +281,10 @@ const Home = () => {
                                         <div className='w-[1px] h-full bg-[#5742DC] relative left-2'></div>
                                         <div className='w-[19px] h-[19px] rounded-full bg-[#5742DC] mt-[30px]'></div>
                                     </div>
-                                    <div className='w-[450px] h-auto bg-transparent px-[25px] py-[9px] my-[10px] rounded-md border-2 group border-[#b1bed6] hover:border-[#5742DC] hover:bg-[#25243B]'>
+                                    <div className='w-[450px] h-auto bg-transparent px-[25px] py-[9px] my-[10px] rounded-md border-2 group border-[#b1bed6] hover:border-[#5742DC] hover:bg-[#25243B] duration-100 group'>
                                         <p className='group-hover:text-[#FBFCFF] font-semibold text-md mt-0 mb-0'>Generalist</p>
                                         <p className='text-[#8a94a7] group-hover:text-[#A4AEC3] font-medium text-[0.7rem] mt-[-3px] leading-relaxed mb-[10px]'>January 2004 - March 2024 . 20 years 2 months</p>
-                                        <p className='text-[#b1bed6] group-hover:text-[#FBFCFF] font-medium text-xs mt-[-3px] mb-[5px] leading-relaxed'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad quis nostrud.</p>
+                                        <p className='text-[#b1bed6] max-h-0 overflow-hidden group-hover:text-[#FBFCFF] font-medium text-xs mt-[-3px] mb-[5px] leading-relaxed group-hover:max-h-[95px] duration-700'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad quis nostrud.</p>
                                     </div>
                                 </div>
                             </div>
@@ -298,10 +304,10 @@ const Home = () => {
                                         <div className='w-[1px] h-full bg-[#5742DC] relative left-2'></div>
                                         <div className='w-[19px] h-[19px] rounded-full bg-[#5742DC] mt-[30px]'></div>
                                     </div>
-                                    <div className='w-[450px] h-auto bg-transparent px-[25px] py-[9px] my-[10px] rounded-md border-2 group border-[#b1bed6] hover:border-[#5742DC] hover:bg-[#25243B]'>
+                                    <div className='w-[450px] h-auto bg-transparent px-[25px] py-[9px] my-[10px] rounded-md border-2 group border-[#b1bed6] hover:border-[#5742DC] hover:bg-[#25243B] duration-100 group'>
                                         <p className='group-hover:text-[#FBFCFF] font-semibold text-md mt-0 mb-0'>Generalist</p>
                                         <p className='text-[#8a94a7] group-hover:text-[#A4AEC3] font-medium text-[0.7rem] mt-[-3px] leading-relaxed mb-[10px]'>January 2004 - March 2024 . 20 years 2 months</p>
-                                        <p className='text-[#b1bed6] group-hover:text-[#FBFCFF] font-medium text-xs mt-[-3px] mb-[5px] leading-relaxed block'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad quis nostrud.</p>
+                                        <p className='text-[#b1bed6] max-h-0 overflow-hidden group-hover:text-[#FBFCFF] font-medium text-xs mt-[-3px] mb-[5px] leading-relaxed group-hover:max-h-[95px] duration-700'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad quis nostrud.</p>
                                     </div>
                                 </div>
                                 <div className='flex w-auto justify-center h-auto bg-transparent ml-[80px]'>
@@ -309,10 +315,10 @@ const Home = () => {
                                         <div className='w-[1px] h-full bg-[#5742DC] relative left-2'></div>
                                         <div className='w-[19px] h-[19px] rounded-full bg-[#5742DC] mt-[30px]'></div>
                                     </div>
-                                    <div className='w-[450px] h-auto bg-transparent px-[25px] py-[9px] my-[10px] rounded-md border-2 group border-[#b1bed6] hover:border-[#5742DC] hover:bg-[#25243B]'>
+                                    <div className='w-[450px] h-auto bg-transparent px-[25px] py-[9px] my-[10px] rounded-md border-2 group border-[#b1bed6] hover:border-[#5742DC] hover:bg-[#25243B] duration-100 group'>
                                         <p className='group-hover:text-[#FBFCFF] font-semibold text-md mt-0 mb-0'>Generalist</p>
                                         <p className='text-[#8a94a7] group-hover:text-[#A4AEC3] font-medium text-[0.7rem] mt-[-3px] leading-relaxed mb-[10px]'>January 2004 - March 2024 . 20 years 2 months</p>
-                                        <p className='text-[#b1bed6] group-hover:text-[#FBFCFF] font-medium text-xs mt-[-3px] mb-[5px] leading-relaxed'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad quis nostrud.</p>
+                                        <p className='text-[#b1bed6] max-h-0 overflow-hidden group-hover:text-[#FBFCFF] font-medium text-xs mt-[-3px] mb-[5px] leading-relaxed group-hover:max-h-[95px] duration-700'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad quis nostrud.</p>
                                     </div>
                                 </div>
                             </div>
@@ -337,10 +343,10 @@ const Home = () => {
                                         <div className='w-[1px] h-full bg-[#5742DC] relative left-2'></div>
                                         <div className='w-[19px] h-[19px] rounded-full bg-[#5742DC] mt-[30px]'></div>
                                     </div>
-                                    <div className='w-[450px] h-auto bg-transparent px-[25px] py-[9px] my-[10px] rounded-md border-2 group border-[#b1bed6] hover:border-[#5742DC] hover:bg-[#25243B]'>
+                                    <div className='w-[450px] h-auto bg-transparent px-[25px] py-[9px] my-[10px] rounded-md border-2 group border-[#b1bed6] hover:border-[#5742DC] hover:bg-[#25243B] duration-100 group'>
                                         <p className='group-hover:text-[#FBFCFF] font-semibold text-md mt-0 mb-0'>Generalist</p>
                                         <p className='text-[#8a94a7] group-hover:text-[#A4AEC3] font-medium text-[0.7rem] mt-[-3px] leading-relaxed mb-[10px]'>January 2004 - March 2024 . 20 years 2 months</p>
-                                        <p className='text-[#b1bed6] group-hover:text-[#FBFCFF] font-medium text-xs mt-[-3px] mb-[5px] leading-relaxed'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad quis nostrud.</p>
+                                        <p className='text-[#b1bed6] max-h-0 overflow-hidden group-hover:text-[#FBFCFF] font-medium text-xs mt-[-3px] mb-[5px] leading-relaxed group-hover:max-h-[95px] duration-700'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad quis nostrud.</p>
                                     </div>
                                 </div>
                             </div>
@@ -361,7 +367,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section class="cta section">
+            <section class="cta section bg-[#15181D]">
 				<div class="container">
 					<div class="cta-inner section-inner">
 						<h3 class="section-title mt-0">Still not convinced on buying?</h3>
