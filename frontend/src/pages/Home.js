@@ -124,44 +124,59 @@ const Home = () => {
                             <p className='text-2xl leading-[70px] font-extrabold text-[#FBFCFF] mt-[-70px] ml-[5px] mb-0 text-center xl:text-left'>My Services</p>
                         </div>
                         <div className='flex flex-wrap h-auto max-w-[1200px] bg-transparent mx-auto justify-center'>
-                            <div className='flex h-[220px] w-[320px] p-[30px] mx-[10px] mb-[20px] bg-[#25282F]'>
-                                <FontAwesomeIcon className='h-[55px] text-[#5b43f4] group-hover:text-white duration-500 mb-[10px]' icon="fa-brands fa-twitter" />
+                            <div className='flex xl:block h-auto w-[350px] xl:w-[320px] px-[30px] py-[20px] xl:py-[30px] mx-[10px] mb-[20px] bg-[#25282F]'>
+                                <div className='flex items-center'>
+                                    <FontAwesomeIcon className='h-[45px] text-[#5b43f4] pr-[20px] xl:pr-0 group-hover:text-white duration-500 mb-[10px]' icon="fa-brands fa-twitter" />
+                                </div>
                                 <div>
-                                    <p className='text-white font-extrabold text-sm leading-4 mb-[10px]'>3D Assets Design</p>
-                                    <p className='text-[#b1bed6] font-medium text-[0.72rem] mb-0 leading-relaxed'>Kuburan gang 1 shaf ke-5 dari pohon pertama, nisan corak granite putih</p>
+                                    <p className='text-white font-extrabold text-xs xl:text-sm leading-4 mb-[10px]'>3D Assets Design</p>
+                                    <p className='text-[#b1bed6] font-medium text-[0.6rem] xl:text-[0.72rem] mb-0 leading-relaxed'>Kuburan gang 1 shaf ke-5 dari pohon pertama, nisan corak granite putih</p>
                                 </div>
                             </div>
-                            <div className='h-[220px] w-[320px] p-[30px] mx-[10px] mb-[20px] bg-[#25282F]'>
-                                <FontAwesomeIcon className='h-[55px] text-[#5b43f4] group-hover:text-white duration-500 mb-[10px]' icon="fa-brands fa-twitter" />
+                            <div className='flex xl:block h-auto w-[350px] xl:w-[320px] px-[30px] py-[20px] xl:py-[30px] mx-[10px] mb-[20px] bg-[#25282F]'>
+                                <div className='flex items-center'>
+                                    <FontAwesomeIcon className='h-[45px] text-[#5b43f4] pr-[20px] xl:pr-0 group-hover:text-white duration-500 mb-[10px]' icon="fa-brands fa-twitter" />
+                                </div>
                                 <div>
-                                    <p className='text-white font-extrabold text-sm leading-4 mb-[10px]'>3D Assets Design</p>
-                                    <p className='text-[#b1bed6] font-medium text-[0.72rem] mb-0 leading-relaxed'>Kuburan gang 1 shaf ke-5 dari pohon pertama, nisan corak granite putih</p>
+                                    <p className='text-white font-extrabold text-xs xl:text-sm leading-4 mb-[10px]'>3D Assets Design</p>
+                                    <p className='text-[#b1bed6] font-medium text-[0.6rem] xl:text-[0.72rem] mb-0 leading-relaxed'>Kuburan gang 1 shaf ke-5 dari pohon pertama, nisan corak granite putih</p>
                                 </div>
                             </div>
-                            <div className='h-[220px] w-[320px] p-[30px] mx-[10px] mb-[20px] bg-[#25282F]'>
-                                <FontAwesomeIcon className='h-[55px] text-[#5b43f4] group-hover:text-white duration-500 mb-[10px]' icon="fa-brands fa-twitter" />
-                                <p className='text-white font-extrabold text-sm leading-4 mb-[10px]'>3D Assets Design</p>
-                                <p className='text-[#b1bed6] font-medium text-[0.72rem] mb-0 leading-relaxed'>Kuburan gang 1 shaf ke-5 dari pohon pertama, nisan corak granite putih</p>
+                            <div className='flex xl:block h-auto w-[350px] xl:w-[320px] px-[30px] py-[20px] xl:py-[30px] mx-[10px] mb-[20px] bg-[#25282F]'>
+                                <div className='flex items-center'>
+                                    <FontAwesomeIcon className='h-[45px] text-[#5b43f4] pr-[20px] xl:pr-0 group-hover:text-white duration-500 mb-[10px]' icon="fa-brands fa-twitter" />
+                                </div>
+                                <div>
+                                    <p className='text-white font-extrabold text-xs xl:text-sm leading-4 mb-[10px]'>3D Assets Design</p>
+                                    <p className='text-[#b1bed6] font-medium text-[0.6rem] xl:text-[0.72rem] mb-0 leading-relaxed'>Kuburan gang 1 shaf ke-5 dari pohon pertama, nisan corak granite putih</p>
+                                </div>
                             </div>
-                            <div className='h-[220px] w-[320px] p-[30px] mx-[10px] mb-[20px] bg-[#25282F]'>
-                                <FontAwesomeIcon className='h-[55px] text-[#5b43f4] group-hover:text-white duration-500 mb-[10px]' icon="fa-brands fa-twitter" />
-                                <p className='text-white font-extrabold text-sm leading-4 mb-[10px]'>3D Assets Design</p>
-                                <p className='text-[#b1bed6] font-medium text-[0.72rem] mb-0 leading-relaxed'>Kuburan gang 1 shaf ke-5 dari pohon pertama, nisan corak granite putih</p>
+                            <div className='flex xl:block h-auto w-[350px] xl:w-[320px] px-[30px] py-[20px] xl:py-[30px] mx-[10px] mb-[20px] bg-[#25282F]'>
+                                <div className='flex items-center'>
+                                    <FontAwesomeIcon className='h-[45px] text-[#5b43f4] pr-[20px] xl:pr-0 group-hover:text-white duration-500 mb-[10px]' icon="fa-brands fa-twitter" />
+                                </div>
+                                <div>
+                                    <p className='text-white font-extrabold text-xs xl:text-sm leading-4 mb-[10px]'>3D Assets Design</p>
+                                    <p className='text-[#b1bed6] font-medium text-[0.6rem] xl:text-[0.72rem] mb-0 leading-relaxed'>Kuburan gang 1 shaf ke-5 dari pohon pertama, nisan corak granite putih</p>
+                                </div>
                             </div>
-                            <div className='h-[220px] w-[320px] p-[30px] mx-[10px] mb-[20px] bg-[#25282F]'>
-                                <FontAwesomeIcon className='h-[55px] text-[#5b43f4] group-hover:text-white duration-500 mb-[10px]' icon="fa-brands fa-twitter" />
-                                <p className='text-white font-extrabold text-sm leading-4 mb-[10px]'>3D Assets Design</p>
-                                <p className='text-[#b1bed6] font-medium text-[0.72rem] mb-0 leading-relaxed'>Kuburan gang 1 shaf ke-5 dari pohon pertama, nisan corak granite putih</p>
+                            <div className='flex xl:block h-auto w-[350px] xl:w-[320px] px-[30px] py-[20px] xl:py-[30px] mx-[10px] mb-[20px] bg-[#25282F]'>
+                                <div className='flex items-center'>
+                                    <FontAwesomeIcon className='h-[45px] text-[#5b43f4] pr-[20px] xl:pr-0 group-hover:text-white duration-500 mb-[10px]' icon="fa-brands fa-twitter" />
+                                </div>
+                                <div>
+                                    <p className='text-white font-extrabold text-xs xl:text-sm leading-4 mb-[10px]'>3D Assets Design</p>
+                                    <p className='text-[#b1bed6] font-medium text-[0.6rem] xl:text-[0.72rem] mb-0 leading-relaxed'>Kuburan gang 1 shaf ke-5 dari pohon pertama, nisan corak granite putih</p>
+                                </div>
                             </div>
-                            <div className='h-[220px] w-[320px] p-[30px] mx-[10px] mb-[20px] bg-[#25282F]'>
-                                <FontAwesomeIcon className='h-[55px] text-[#5b43f4] group-hover:text-white duration-500 mb-[10px]' icon="fa-brands fa-twitter" />
-                                <p className='text-white font-extrabold text-sm leading-4 mb-[10px]'>3D Assets Design</p>
-                                <p className='text-[#b1bed6] font-medium text-[0.72rem] mb-0 leading-relaxed'>Kuburan gang 1 shaf ke-5 dari pohon pertama, nisan corak granite putih</p>
-                            </div>
-                            <div className='h-[220px] w-[320px] p-[30px] mx-[10px] mb-[20px] bg-[#25282F]'>
-                                <FontAwesomeIcon className='h-[55px] text-[#5b43f4] group-hover:text-white duration-500 mb-[10px]' icon="fa-brands fa-twitter" />
-                                <p className='text-white font-extrabold text-sm leading-4 mb-[10px]'>3D Assets Design</p>
-                                <p className='text-[#b1bed6] font-medium text-[0.72rem] mb-0 leading-relaxed'>Kuburan gang 1 shaf ke-5 dari pohon pertama, nisan corak granite putih</p>
+                            <div className='flex xl:block h-auto w-[350px] xl:w-[320px] px-[30px] py-[20px] xl:py-[30px] mx-[10px] mb-[20px] bg-[#25282F]'>
+                                <div className='flex items-center'>
+                                    <FontAwesomeIcon className='h-[45px] text-[#5b43f4] pr-[20px] xl:pr-0 group-hover:text-white duration-500 mb-[10px]' icon="fa-brands fa-twitter" />
+                                </div>
+                                <div>
+                                    <p className='text-white font-extrabold text-xs xl:text-sm leading-4 mb-[10px]'>3D Assets Design</p>
+                                    <p className='text-[#b1bed6] font-medium text-[0.6rem] xl:text-[0.72rem] mb-0 leading-relaxed'>Kuburan gang 1 shaf ke-5 dari pohon pertama, nisan corak granite putih</p>
+                                </div>
                             </div>
                         </div>
                     </div>
