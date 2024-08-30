@@ -395,46 +395,46 @@ const Home = () => {
                 xl:flex-wrap
                 '>
                     <div className='flex w-full flex-col h-auto bg-transparent px-[35px] md:w-[1400px]'>
-                        <div className="max-w-[1600px] w-auto h-fit grid grid-cols-1 gap-4 xl:grid-cols-2">
+                        <div className="max-w-[1600px] w-auto h-fit grid grid-cols-1 gap-7 xl:grid-cols-2">
                             <div className="grid col-span-1 h-fit gap-8">
-                                <div>
-                                    <div className='h-auto w-full bg-white p-[20px] pb-0'>
-                                        <img className='w-full' src={images['Method_1.png']} alt="" />
+                                <div className='border-2 border-[#5742DC]'>
+                                    <div className='h-auto w-full bg-[#1F2329] p-[30px]'>
+                                        <img className='w-full' src={images['portofolio_1.png']} alt="" />
                                     </div>
-                                    <div className='h-auto w-full bg-white px-[40px] py-[25px]'>
-                                        <p className='font-extrabold m-0 text-xl'>Effortless</p>
-                                        <p className='font-normal m-0 text-md'>Branding</p>
+                                    <div className='h-auto w-full bg-[#25282E] px-[30px] py-[25px]'>
+                                        <p className='font-extrabold m-0 text-xl text-gray-300'>Effortless</p>
+                                        <p className='font-normal m-0 text-md text-gray-400'>Branding</p>
                                     </div>
                                 </div>  
-                                <div>
-                                    <div className='h-auto w-full bg-white p-[20px] pb-0'>
-                                        <img className='w-full' src={images['Method_1.png']} alt="" />
+                                <div className='border-2 border-[#5742DC]'>
+                                    <div className='h-auto w-full bg-[#1F2329] p-[30px]'>
+                                        <img className='w-full' src={images['portofolio_2.jpg']} alt="" />
                                     </div>
-                                    <div className='h-auto w-full bg-white px-[40px] py-[25px]'>
-                                        <p className='font-extrabold m-0 text-xl'>Effortless</p>
-                                        <p className='font-normal m-0 text-md'>Branding</p>
+                                    <div className='h-auto w-full bg-[#25282E] px-[30px] py-[25px]'>
+                                        <p className='font-extrabold m-0 text-xl text-gray-300'>Effortless</p>
+                                        <p className='font-normal m-0 text-md text-gray-400'>Branding</p>
                                     </div>
                                 </div> 
                             </div>
                             <div className="grid col-span-1 h-fit gap-8">
-                                <div>
-                                    <div className='h-auto w-full bg-white p-[20px] pb-0'>
-                                        <img className='w-full' src={images['Method_1.png']} alt="" />
+                                <div className='border-2 border-[#5742DC]'>
+                                    <div className='h-auto w-full bg-[#1F2329] p-[30px]'>
+                                        <img className='w-full' src={images['portofolio_2.jpg']} alt="" />
                                     </div>
-                                    <div className='h-auto w-full bg-white px-[40px] py-[25px]'>
-                                        <p className='font-extrabold m-0 text-xl'>Effortless</p>
-                                        <p className='font-normal m-0 text-md'>Branding</p>
+                                    <div className='h-auto w-full bg-[#25282E] px-[30px] py-[25px]'>
+                                        <p className='font-extrabold m-0 text-xl text-gray-300'>Effortless</p>
+                                        <p className='font-normal m-0 text-md text-gray-400'>Branding</p>
                                     </div>
                                 </div>  
-                                <div>
-                                    <div className='h-auto w-full bg-white p-[20px] pb-0'>
-                                        <img className='w-full' src={images['Method_1.png']} alt="" />
+                                <div className='border-2 border-[#5742DC]'>
+                                    <div className='h-auto w-full bg-[#1F2329] p-[30px]'>
+                                        <img className='w-full' src={images['portofolio_1.png']} alt="" />
                                     </div>
-                                    <div className='h-auto w-full bg-white px-[40px] py-[25px]'>
-                                        <p className='font-extrabold m-0 text-xl'>Effortless</p>
-                                        <p className='font-normal m-0 text-md'>Branding</p>
+                                    <div className='h-auto w-full bg-[#25282E] px-[30px] py-[25px]'>
+                                        <p className='font-extrabold m-0 text-xl text-gray-300'>Effortless</p>
+                                        <p className='font-normal m-0 text-md text-gray-400'>Branding</p>
                                     </div>
-                                </div> 
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -512,7 +512,6 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-
             <section class="pricing section">
                 <div class="container-sm">
                     <div class="pricing-inner section-inner">
