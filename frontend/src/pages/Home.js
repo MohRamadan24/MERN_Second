@@ -1,9 +1,6 @@
 import images from '../utils/importImages'
 import React, { useEffect, useRef } from 'react';
 
-
-
-
 const Home = () => {
 
   const myElementRef = useRef(null);
